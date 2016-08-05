@@ -6,6 +6,8 @@ title: VAO Unity plugin User Guide
 
 Volumetric Ambient Occlusion (VAO) is a post processing image effect for Unity 5 (5.0.0 or higher)
 
+You can buy VAO at [Unity Asset Store](http://u3d.as/xzs).
+
 VAO provides additional level of visual quality by simulating soft ambient light shadows. It accentuates local geometric detail and produces shadows by nearby occluding surfaces (in the corners, cracks, holes, rough surfaces etc.). Resulting scenes have more depth and appear more realistic.
 
 Combining classic screen-space ambient occlusion (SSAO) algorithm with a more physically based approach lets us achieve better visual quality and performance compared to classic SSAO. 
