@@ -1,0 +1,12 @@
+# Site settings
+title: Project Wilberforce Website
+email: projectwilberforce@gmail.com
+description: We make the virtual world a better place.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://projectwilberforce.github.io/" # the base hostname & protocol for your site
+twitter_username: wilberforcefx
+github_username:  projectwilberforce
+repository: projectwilberforce/projectwilberforce.github.io
+
+# Build settings
+markdown: kramdown

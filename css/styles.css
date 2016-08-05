@@ -816,3 +816,46 @@ section #title .credits.right {
     display: none;
   }
 }
+
+.img-left {
+  max-width: 300px;
+  float:left;
+}
+
+.img-right {
+  max-width: 300px;
+  float:right;
+}
+
+.img-right + em {
+  width: 49%;
+  float: left;
+  text-align: center;
+  font-style: normal;
+  font-size: 12px;
+  font-weight: bold;
+  color: #ffa500;
+}
+      
+.img-right + em + em {
+  width: 49%;
+  float:right;   
+  text-align: center;
+  font-style: normal;
+  font-size: 12px;
+  font-weight: bold;
+  color: #ffa500;
+}
+
+h2 {
+  clear: both;
+  color: rgb(228, 201, 61);
+}              
+
+table, th {
+  text-align: center;
+  font-style: normal;
+  font-size: 12px;
+  font-weight: bold;
+  color: #ffa500;
+}
