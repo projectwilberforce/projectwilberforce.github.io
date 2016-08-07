@@ -856,6 +856,7 @@ section #title .credits.right {
 h2 {
   clear: both;
   color: rgb(228, 201, 61);
+  padding-top: 20px;
 }              
 
 table, th {
