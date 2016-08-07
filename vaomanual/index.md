@@ -10,10 +10,10 @@ title: VAO Unity plugin User Guide
     - [Parameters](#parameters)
     - [Tips](#tips)
 - [Troubleshooting](#troubleshooting)
-    - [Near/Far Plane](#planes)
-    - [Attaching Shader](#attach)
-    - [Radius is too low](#radius-low)
-    - [Radius is too large](#radius-large)
+    - [Near/Far Plane](#nearfar-plane)
+    - [Attaching Shader](#attaching-shader)
+    - [Radius is too low](#radius-is-too-low)
+    - [Radius is too large](#radius-is-too-large)
 - [Contact Information](#contact-information)
 
 # Introduction
@@ -59,8 +59,6 @@ See forum for discussion and contact us at <projectwilberforce@gmail.com> for ad
 
 # How to Use
 
-<a name="parameters"></a>
-
 ## Parameters
 
 VAO effect behaviour is controlled by a couple of easy to use parameters.
@@ -86,7 +84,6 @@ Use for development.
 |  **low power**  | ![](11.png)     | ![](12.png)
 | **high power**  | ![](21.png)     | ![](22.png)
 
-<a name="tips"></a>
 
 ## Tips
 
@@ -95,8 +92,6 @@ You can add the *VAO Effect* component multiple times with different settings to
 For example, you can add *VAO effect* with short radius and another with longer one. This will create scene with both short hard and longer softer shadows.
 
 # Troubleshooting
-
-<a name="planes"></a>
 
 ## Near/Far plane
 
@@ -109,8 +104,6 @@ Note that range of possible settings is determined by precision of depth buffer.
 *Example of banding artifacts caused by incorrectly set far plane*
 *Adjusting far plane fixes the issue*
 
-<a name="attach"></a>
-
 ## Attaching shader
 
 When VAO effect is attached to the camera, its corresponding `VAOShader.shader` file is automatically located and bound to *VAOShader* property. If this does not happen, make sure that `VAOShader.shader` file can be found in the *Project* window under *Assets/Shaders* folder. Then bind this shader manually by drag&dropping it to *VAOShader* property in *Inspector* window.
@@ -119,8 +112,6 @@ When VAO effect is attached to the camera, its corresponding `VAOShader.shader` 
 ![shader attached](inspector.png "Shader attached"){:class="img-right"}
 *Inspector shows no attached shader*
 *Should instead look like this*
-
-<a name="radius-low"></a>
 
 ## Radius is too low
 
@@ -132,8 +123,6 @@ To solve the issue, increase radius slowly until dark banded areas disappear and
 ![low radius fixed](radiuslowright.png "Correct result after increasing radius"){:class="img-right"}
 *Radius is too low to produce reasonable results*
 *Scene in question after correction*
-
-<a name="radius-large"></a>
 
 ## Radius is too large
 
