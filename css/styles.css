@@ -639,6 +639,7 @@ strong {
 
 section img {
   max-width: 100%;
+
 }
 
 blockquote {
@@ -752,7 +753,10 @@ section {
   margin-top: 70px;
 }
 section ul li {
-  line-height: 2.4em;
+  line-height: 2em;
+}
+section ol li {
+  line-height: 2em;
 }
 section #title {
   border: 0;
@@ -835,6 +839,7 @@ section #title .credits.right {
   font-size: 12px;
   font-weight: bold;
   color: #ffa500;
+  margin-top: -25px;
 }
       
 .img-right + em + em {
@@ -845,6 +850,7 @@ section #title .credits.right {
   font-size: 12px;
   font-weight: bold;
   color: #ffa500;
+  margin-top: -25px;
 }
 
 h2 {
@@ -858,4 +864,16 @@ table, th {
   font-size: 12px;
   font-weight: bold;
   color: #ffa500;
+}
+
+section img {
+  margin: 15px 0 30px 0;
+}
+
+table img {
+  margin: 0px !important;
+}
+
+ul ul {
+  margin: 0px !important;
 }
