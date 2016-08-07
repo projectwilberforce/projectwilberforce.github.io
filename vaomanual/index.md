@@ -14,7 +14,7 @@ title: VAO Unity plugin User Guide
     - [Attaching Shader](#attach)
     - [Radius is too low](#radius-low)
     - [Radius is too large](#radius-large)
-- [Contact Information](#contact)
+- [Contact Information](#contact-information)
 
 # Introduction
 
