@@ -16,8 +16,7 @@ title: VAO Unity plugin User Guide
     - [Radius is too large](#radius-large)
 - [Contact Information](#contact)
 
-<a name="introduction"></a>
-# Introduction
+# <a name="introduction"></a>Introduction
 
 Volumetric Ambient Occlusion (VAO) is a post processing image effect for Unity 5 (5.0.0 or higher)
 
@@ -35,8 +34,7 @@ Plugin is compatible with all Unity rendering paths (Forward, Deferred and Legac
 
 See forum for discussion and contact us at <projectwilberforce@gmail.com> for additional support.
 
-<a name="requirements"></a>
-# Requirements
+# <a name="requirements"></a>Requirements
 
 - Unity 5 (5.0.0 or higher; all editions including Personal)
 - Shader Model 3.0:  
@@ -47,8 +45,7 @@ See forum for discussion and contact us at <projectwilberforce@gmail.com> for ad
 - Windows, Mac, Linux
 - Not tested on mobile and web platforms
 
-<a name="installation"></a>
-# Installation
+# <a name="installation"></a>Installation
 
 1. Import from Asset Store.
 2. Select your camera component.  
@@ -60,10 +57,9 @@ See forum for discussion and contact us at <projectwilberforce@gmail.com> for ad
 5. If property VAO shader is not set to *"Hidden/Wilberforce/VAOShader"* see Troubleshooting section below on how to fix it.  
 ![](noshader.png)
 
-<a name="how-to-use"></a>
-# How to Use
-<a name="parameters"></a>
-## Parameters
+# <a name="how-to-use"></a>How to Use
+
+## <a name="parameters"></a>Parameters
 
 VAO effect behaviour is controlled by a couple of easy to use parameters.
 
@@ -88,17 +84,17 @@ Use for development.
 |  **low power**  | ![](11.png)     | ![](12.png)
 | **high power**  | ![](21.png)     | ![](22.png)
 
-<a name="tips"></a>
-## Tips
+
+## <a name="tips"></a>Tips
 
 You can add the *VAO Effect* component multiple times with different settings to the same camera to create more detailed appearance.
 
 For example, you can add *VAO effect* with short radius and another with longer one. This will create scene with both short hard and longer softer shadows.
 
-<a name="troubleshooting"></a>
-# Troubleshooting
-<a name="planes"></a>
-## Near/Far plane
+
+# <a name="troubleshooting"></a>Troubleshooting
+
+## <a name="planes"></a>Near/Far plane
 
 When near and far clipping planes of the camera are too far apart, banding artifacts as seen on the picture occur. Should this happen, set the clipping planes to tightly envelop the visible scene - i.e. bring far plane as close as possible.  
 
@@ -109,8 +105,7 @@ Note that range of possible settings is determined by precision of depth buffer.
 *Example of banding artifacts caused by incorrectly set far plane*
 *Adjusting far plane fixes the issue*
 
-<a name="attach"></a>
-## Attaching shader
+## <a name="attach"></a>Attaching shader
 
 When VAO effect is attached to the camera, its corresponding `VAOShader.shader` file is automatically located and bound to *VAOShader* property. If this does not happen, make sure that `VAOShader.shader` file can be found in the *Project* window under *Assets/Shaders* folder. Then bind this shader manually by drag&dropping it to *VAOShader* property in *Inspector* window.
 
@@ -119,8 +114,7 @@ When VAO effect is attached to the camera, its corresponding `VAOShader.shader` 
 *Inspector shows no attached shader*
 *Should instead look like this*
 
-<a name="radius-low"></a>
-## Radius is too low
+## <a name="radius-low"></a>Radius is too low
 
 Because VAO is screen-space based effect, there is a limited range of values that work correctly for radius setting. If radius is set too low, artifacts as seen on the picture will occur due to self-intersections. Thanks to its design this alogrithm is not very susceptible to self-intersection problems, however when radius gets extremly low, no reasonable occlusions can be found.
 
@@ -131,8 +125,7 @@ To solve the issue, increase radius slowly until dark banded areas disappear and
 *Radius is too low to produce reasonable results*
 *Scene in question after correction*
 
-<a name="radius-large"></a>
-## Radius is too large
+## <a name="radius-large"></a>Radius is too large
 
 Because VAO is screen-space based effect, there is a limited range of values that work correctly for radius setting. When radius is too large, large dark areas will appear with no reasonable occlusions are visible. 
 
@@ -143,7 +136,6 @@ To solve the issue, lower radius setting until correct occlusions appear in the 
 *Setting large radius breaks the effect*
 *Expected result*
 
-<a name="contact"></a>
-# Contact Information
+# <a name="contact"></a>Contact Information
 In case of questions or further issues, please contact us at <projectwilberforce@gmail.com>
 
