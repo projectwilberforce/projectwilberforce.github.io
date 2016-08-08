@@ -115,7 +115,7 @@ When VAO effect is attached to the camera, its corresponding `VAOShader.shader` 
 
 ## Radius is too low
 
-Because VAO is screen-space based effect, there is a limited range of values that work correctly for radius setting. If radius is set too low, artifacts as seen on the picture will occur due to self-intersections. Thanks to its design this alogrithm is not very susceptible to self-intersection problems, however when radius gets extremly low, no reasonable occlusions can be found.
+Because VAO is screen-space based effect, there is a limited range of values that work correctly for radius setting. If radius is set too low, artifacts as seen on the picture will occur due to self-intersections. Thanks to its design this algorithm is not very susceptible to self-intersection problems, however when radius gets extremly low, no reasonable occlusions can be found.
 
 To solve the issue, increase radius slowly until dark banded areas disappear and only correct occlusions are visible.
 
@@ -126,7 +126,7 @@ To solve the issue, increase radius slowly until dark banded areas disappear and
 
 ## Radius is too large
 
-Because VAO is screen-space based effect, there is a limited range of values that work correctly for radius setting. When radius is too large, large dark areas will appear with no reasonable occlusions are visible. 
+Because VAO is screen-space based effect, there is a limited range of values that work correctly for radius setting. When radius is too large, large dark areas will appear with no reasonable occlusions visible. 
 
 To solve the issue, lower radius setting until correct occlusions appear in the corners, cracks etc.
 
