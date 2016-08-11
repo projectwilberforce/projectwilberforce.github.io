@@ -805,8 +805,8 @@ section #title .credits.right {
     display: block;
   }
   figure {
-    float: none;
-    width: 100%;
+    float: none !important;
+    width: 100% !important;
   }
 }
 @media print, screen and (max-width: 480px) {
