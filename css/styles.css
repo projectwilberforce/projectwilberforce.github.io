@@ -831,7 +831,11 @@ a img {
 
 figure {
   float: left;
-  width: 50%;
+  width: 49%;
+}
+
+figure + figure {
+  margin-left: 1%;
 }
 
 figure a{
@@ -846,43 +850,9 @@ figcaption {
   margin-top: 0.7em;
 }
 
-/*
-.img-left {
-  max-width: 300px;
-  float:left;
-}
-
-.img-right {
-  max-width: 300px;
-  float:right;
-}
-
-.img-right + em {
-  width: 49%;
-  float: left;
-  text-align: center;
-  font-style: normal;
-  font-size: 12px;
-  font-weight: bold;
-  color: #ffa500;
-  margin-top: -25px;
-}
-      
-.img-right + em + em {
-  width: 49%;
-  float:right;   
-  text-align: center;
-  font-style: normal;
-  font-size: 12px;
-  font-weight: bold;
-  color: #ffa500;
-  margin-top: -25px;
-}*/
-
 h2 {
   clear: both;
   color: rgb(228, 201, 61);
-  padding-top: 20px;
 }              
 
 table, th {
