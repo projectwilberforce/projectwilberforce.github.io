@@ -811,6 +811,10 @@ section #title .credits.right {
     float: none !important;
     width: 100% !important;
   }
+
+  figure + figure {
+    margin-left: 0 !important;
+  }
 }
 @media print, screen and (max-width: 480px) {
   #header .wrapper {
@@ -850,7 +854,7 @@ figcaption {
   font-size: 12px;
   font-weight: bold;
   color: #ffa500;
-  margin-top: 0.7em;
+  margin: 0.7em 0;
 }
 
 h2 {
