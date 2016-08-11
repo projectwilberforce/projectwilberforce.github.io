@@ -99,6 +99,7 @@ When near and far clipping planes of the camera are too far apart, banding artif
 
 Note that range of possible settings is determined by precision of depth buffer.
 
+<p>
 <figure>
 <a href="farplanewrong.png"><img src="farplanewrong.png" alt="incorrect far plane" title="Incorrect far plane"/></a>
 <figcaption>Example of banding artifacts caused by incorrectly set far plane</figcaption>
@@ -107,19 +108,22 @@ Note that range of possible settings is determined by precision of depth buffer.
 <a href="farplaneright.png"><img src="farplaneright.png" alt="correct far plane" title="Correct far plane"/></a>
 <figcaption>Adjusting far plane fixes the issue</figcaption>
 </figure>
+</p>
 
 ## Attaching shader
 
 When VAO effect is attached to the camera, its corresponding `VAOShader.shader` file is automatically located and bound to *VAOShader* property. If this does not happen, make sure that `VAOShader.shader` file can be found in the *Project* window under *Assets/Shaders* folder. Then bind this shader manually by drag&dropping it to *VAOShader* property in *Inspector* window.
 
+<p>
 <figure>
-[![no shader attached](noshader.png "No shader attached")](noshader.png)
+<a href="noshader.png"><img src="noshader.png" alt="no shader attached" title="No shader attached"/></a>
 <figcaption>Inspector shows no attached shader</figcaption>
 </figure>
 <figure>
-[![shader attached](inspector.png "Shader attached")](inspector.png)
-<figcaption>Should instead look like this</figcaption>
+<a href="inspector.png"><img src="inspector.png" alt="shader attached" title="Shader attached"/></a>
+<figcaption>Should instead look like this<</figcaption>
 </figure>
+</p>
 
 ## Radius is too low
 
@@ -127,14 +131,16 @@ Because VAO is screen-space based effect, there is a limited range of values tha
 
 To solve the issue, increase radius slowly until dark banded areas disappear and only correct occlusions are visible.
 
+<p>
 <figure>
-[![low radius example](radiuslowwrong.png "Example of a very low radius")](radiuslowwrong.png)
+<a href="radiuslowwrong.png"><img src="radiuslowwrong.png" alt="low radius example" title="Example of a very low radius"/></a>
 <figcaption>Radius is too low to produce reasonable results</figcaption>
 </figure>
 <figure>
-[![low radius fixed](radiuslowright.png "Correct result after increasing radius")](radiuslowright.png)
+<a href="radiuslowright.png"><img src="radiuslowright.png" alt="low radius fixed" title="Correct result after increasing radius"/></a>
 <figcaption>Scene in question after correction</figcaption>
 </figure>
+</p>
 
 ## Radius is too large
 
@@ -142,14 +148,16 @@ Because VAO is screen-space based effect, there is a limited range of values tha
 
 To solve the issue, lower radius setting until correct occlusions appear in the corners, cracks etc.
 
+<p>
 <figure>
-[![large radius example](radiushighwrong.png "Example of a very large radius")](radiushighwrong.png)
+<a href="radiushighwrong.png"><img src="radiushighwrong.png" alt="large radius example" title="Example of a very large radius"/></a>
 <figcaption>Setting large radius breaks the effect</figcaption>
 </figure>
 <figure>
-[![large radius fixed](radiushighright.png "Correct result after decreasing radius")](radiushighright.png)
+<a href="radiushighright.png"><img src="radiushighright.png" alt="large radius fixed" title="Correct result after decreasing radius"/></a>
 <figcaption>Expected result</figcaption>
 </figure>
+</p>
 
 # Contact Information
 In case of questions or further issues, please contact us at <projectwilberforce@gmail.com>
