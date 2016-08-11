@@ -804,6 +804,10 @@ section #title .credits.right {
     float: none;
     display: block;
   }
+  figure {
+    float: none;
+    width: 100%;
+  }
 }
 @media print, screen and (max-width: 480px) {
   #header .wrapper {
@@ -823,6 +827,23 @@ section #title .credits.right {
 
 a img {
   margin: 0px !important;
+}
+
+figure {
+  float: left;
+  width: 50%;
+}
+
+figure a{
+  border: 0px none;
+}
+
+figcaption {
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  color: #ffa500;
+  margin-top: 0.7em;
 }
 
 /*
