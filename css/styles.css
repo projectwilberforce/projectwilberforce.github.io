@@ -171,7 +171,7 @@ a:active {
  */
 h1 {
   font-size: 2em;
-  margin-top: 0.17em;
+  margin: 0.17em 0;
   padding-top: 0.5em;
   clear: left;
 }
@@ -838,7 +838,7 @@ figure {
 }
 
 figure + figure {
-  margin-left: 1%;
+  margin-left: 2%;
 }
 
 figure a{
