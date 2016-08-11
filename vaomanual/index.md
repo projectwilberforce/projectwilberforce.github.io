@@ -100,7 +100,9 @@ When near and far clipping planes of the camera are too far apart, banding artif
 Note that range of possible settings is determined by precision of depth buffer.
 
 <figure>
+{{#markdown}}
 [![incorrect far plane](farplanewrong.png "Incorrect far plane")](farplanewrong.png)
+{{/markdown}}
 <figcaption>Example of banding artifacts caused by incorrectly set far plane</figcaption>
 </figure>
 <figure>
