@@ -871,7 +871,8 @@ table, th {
 }
 
 li img {
-  margin: 1em 0;
+  margin: 1em auto;
+  display: block;
 }
 
 table img {
