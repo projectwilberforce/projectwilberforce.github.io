@@ -839,7 +839,8 @@ section #title .credits.right {
 }
 
 a img {
-  margin: 0px !important;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
 }
 
 figure {
