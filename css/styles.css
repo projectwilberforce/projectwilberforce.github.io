@@ -825,10 +825,6 @@ a img {
   margin: 0px !important;
 }
 
-a.img-left img, a.img-right img, a.img-left + em, a.img-right + em{
-  width: 49%;
-}
-
 /*
 .img-left {
   max-width: 300px;
