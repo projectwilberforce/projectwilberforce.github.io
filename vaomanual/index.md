@@ -118,7 +118,7 @@ When VAO effect is attached to the camera, its corresponding `VAOShader.shader` 
 </figure>
 <figure>
 <a href="inspector.png"><img src="inspector.png" alt="shader attached" title="Shader attached"/></a>
-<figcaption>Should instead look like this<</figcaption>
+<figcaption>Should instead look like this</figcaption>
 </figure>
 
 ## Radius is too low
