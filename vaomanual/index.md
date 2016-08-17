@@ -77,7 +77,7 @@ Number of samples used to calculate VAO. Choose lower settings if you need faste
 
 **Output AO only**
 
-Use for development.
+Use for development to display only ambient occlusion component.
 
 |                 | **low radius**  | **high radius**
 | --------------: | --------------- | ----------------
@@ -123,7 +123,7 @@ When VAO effect is attached to the camera, its corresponding `VAOShader.shader` 
 
 ## Radius is too low
 
-Because VAO is screen-space based effect, there is a limited range of values that work correctly for radius setting. If radius is set too low, artifacts as seen on the picture will occur due to self-intersections. Thanks to its design this algorithm is not very susceptible to self-intersection problems, however when radius gets extremly low, no reasonable occlusions can be found.
+Because VAO is screen-space based effect, there is a limited range of values that work correctly for radius setting. If radius is set too low, artifacts as seen on the picture will occur due to self-intersections. Thanks to its design this algorithm is not very susceptible to self-intersection problems, however when radius gets extremely low, no reasonable occlusions can be found.
 
 To solve the issue, increase radius slowly until dark banded areas disappear and only correct occlusions are visible.
 
