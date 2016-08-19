@@ -889,3 +889,16 @@ table img {
 ul ul {
   margin: 0px !important;
 }
+
+#header a.btn {
+  float: right; 
+  margin-right: 2em; 
+  background-color: rgb(216, 186, 32); 
+  border: 1px solid rgb(255, 230, 99); 
+  text-shadow: 0.1em 0.1em 0.2em black;
+  black; color: white;
+}
+
+#header a.btn:hover {
+  text-shadow: 0.1em 0.1em 0.4em black; 
+}
