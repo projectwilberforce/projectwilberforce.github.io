@@ -592,10 +592,11 @@ a {
   font-weight: 400;
   text-decoration: none;
   border-bottom: 1px dotted;
-  transition: color 150ms ease;
+  transition: color 150ms ease, text-shadow 100ms ease;
 }
 a:hover {
   color: #ffd454;
+  text-shadow: 0 0 1em rgb(255,230,99);
 }
 
 .small {
