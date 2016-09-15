@@ -75,6 +75,19 @@ Power variable controls the hardness of the shadow, lower value causes softer sh
 
 Number of samples used to calculate VAO. Choose lower settings if you need faster performance.
 
+**Downsampling**
+
+Reduces resolution of output, use this to gain performance at the cost of quality.
+
+**Effect Mode**
+
+- *Simple* - Black color occlusion
+- *Color Tint* - Custom-set occlusion color. 
+
+**Enable Blur**
+
+//TODO
+
 **Output AO only**
 
 Use for development to display only ambient occlusion component.
