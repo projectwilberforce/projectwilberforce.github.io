@@ -32,7 +32,7 @@ VAO is implemented as an image effect that gets attached to the camera. It featu
 
 Plugin is compatible with all Unity rendering paths (Forward, Deferred and Legacy) and anti-aliasing.
 
-See forum for discussion and contact us at <projectwilberforce@gmail.com> for additional support.
+See [forum for discussion](http://forum.unity3d.com/threads/volumetric-ambient-occlusion-image-effect.428426/) and contact us at <projectwilberforce@gmail.com> for additional support.
 
 # Requirements
 
