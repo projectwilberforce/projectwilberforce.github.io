@@ -54,7 +54,7 @@ See [forum for discussion](http://forum.unity3d.com/threads/volumetric-ambient-o
 ![](addcomponent.png)
 4. VAO effect should now be visible in the *Inspector* window.  
 ![](inspector.png)
-5. If property VAO shader is not set to *"Hidden/Wilberforce/VAOShader"* see Troubleshooting section below on how to fix it.  
+5. If property VAO shader is not set to *"Hidden/Wilberforce/VAOShader"* see Troubleshooting [section below](#attaching-shader) on how to fix it.  
 ![](noshader.png)
 
 # How to Use
