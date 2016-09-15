@@ -81,8 +81,8 @@ Reduces resolution of output, use this to gain performance at the cost of qualit
 
 **Effect Mode**
 
-- *Simple* - Black color occlusion
-- *Color Tint* - Custom-set occlusion color. 
+- *Simple*: Black color occlusion.
+- *Color Tint*: Custom-set occlusion color. 
 
 **Enable Blur**
 
