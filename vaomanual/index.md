@@ -18,7 +18,7 @@ title: VAO Unity plugin User Guide
 
 # Introduction
 
-Volumetric Ambient Occlusion (VAO) is a post processing image effect for Unity 5 (5.0.0 or higher)
+Volumetric Ambient Occlusion (VAO) is new Screen Space Ambient Occlusion for Unity 5 (5.1.0 or higher)
 
 You can buy VAO at [Unity Asset Store](http://u3d.as/xzs).
 
@@ -26,7 +26,7 @@ VAO provides additional level of visual quality by simulating soft ambient light
 
 Combining classic screen-space ambient occlusion (SSAO) algorithm with a more physically based approach lets us achieve better visual quality and performance compared to classic SSAO. 
 
-Thanks to screen-space based solution, surface detail can be represented by normal&bump mapping instead of complex 3D geometry.
+Effect is compatible with normal&bump mapping, so there is no need for complex 3D geometry to create shadows.
 
 VAO is implemented as an image effect that gets attached to the camera. It features only a couple of user controlled variables, which makes it easy to control to produce the desired visual appearance - no magic variables (such as Bias).
 
@@ -77,7 +77,7 @@ Number of samples used to calculate VAO. Choose lower settings if you need faste
 
 **Downsampling**
 
-Reduces resolution of output, use this to gain performance at the cost of quality.
+Reduces resolution of output, use this to gain performance at the cost of quality. Try lowering quality parameter first as this reduces quality dramatically. Having high quality setting with downsampling enabled serves no purpose.
 
 **Effect Mode**
 
