@@ -22,6 +22,15 @@ Volumetric Ambient Occlusion (VAO) is new Screen Space Ambient Occlusion for Uni
 
 You can buy VAO at [Unity Asset Store](http://u3d.as/xzs).
 
+- High performance and visual quality
+- Compatible with all Unity rendering paths (Forward, Deferred and Legacy) and anti-aliasing
+- No haloing artefacts
+- No self-intersections
+- No magic variables
+- Works well on screen borders
+- Preserves shape of shadows when moving camera
+- Compatible with Unity 5.4
+
 VAO provides additional level of visual quality by simulating soft ambient light shadows. It accentuates local geometric detail and produces shadows by nearby occluding surfaces (in the corners, cracks, holes, rough surfaces etc.). Resulting scenes have more depth and appear more realistic.
 
 Combining classic screen-space ambient occlusion (SSAO) algorithm with a more physically based approach lets us achieve better visual quality and performance compared to classic SSAO. 
@@ -33,10 +42,10 @@ VAO is implemented as an image effect that gets attached to the camera. It featu
 Plugin is compatible with all Unity rendering paths (Forward, Deferred and Legacy) and anti-aliasing.
 
 See [forum for discussion](http://forum.unity3d.com/threads/volumetric-ambient-occlusion-image-effect.428426/) and contact us at <projectwilberforce@gmail.com> for additional support.
-
+ 
 # Requirements
 
-- Unity 5 (5.0.0 or higher; all editions including Personal)
+- Unity 5 (5.1.0 or higher; all editions including Personal)
 - Shader Model 3.0:  
 *NVIDIA cards since 2004 (GeForce 6)*  
 *AMD cards since 2005 (Radeon X1300)*  
