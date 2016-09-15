@@ -86,7 +86,7 @@ Reduces resolution of output, use this to gain performance at the cost of qualit
 
 **Enable Blur**
 
-//TODO
+In case you are applying your own blur after VAO effect, you can try turning this off to save performance. Blur step included in VAO is fast and is part of its visual appearance, so you might consider keeping it on all the time.
 
 **Output AO only**
 
@@ -99,6 +99,8 @@ Use for development to display only ambient occlusion component.
 
 
 ## Tips
+
+You should place VAO Effect before any effects that change colors of the image such as tone mapping, vignetting, blur, chromatic aberration etc. As a rule of thumb, place VAO so that it is applied as soon as possible. 
 
 You can add the *VAO Effect* component multiple times with different settings to the same camera to create more detailed appearance.
 
