@@ -18,7 +18,7 @@ title: VAO Unity plugin User Guide
 
 # Introduction
 
-Volumetric Ambient Occlusion (VAO) is new Screen Space Ambient Occlusion for Unity 5 (5.1.0 or higher)
+Volumetric Ambient Occlusion (VAO) is new Screen Space Ambient Occlusion for Unity 5 (5.3.0 or higher)
 
 You can buy VAO at [Unity Asset Store](http://u3d.as/xzs).
 
@@ -45,7 +45,7 @@ See [forum for discussion](http://forum.unity3d.com/threads/volumetric-ambient-o
  
 # Requirements
 
-- Unity 5 (5.1.0 or higher; all editions including Personal)
+- Unity 5 (5.3.0 or higher; all editions including Personal)
 - Shader Model 3.0:  
 *NVIDIA cards since 2004 (GeForce 6)*  
 *AMD cards since 2005 (Radeon X1300)*  
