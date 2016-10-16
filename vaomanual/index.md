@@ -88,6 +88,21 @@ Number of samples used to calculate VAO. Choose lower settings if you need faste
 
 Reduces resolution of output, use this to gain performance at the cost of quality. Try lowering quality parameter first as this reduces quality dramatically. Having high quality setting with downsampling enabled serves no purpose.
 
+**Luminance Sensitivity**
+
+Reduces occlusion on bright surfaces - either light sources or strongly lit areas. We recommend enabling this in combination with downsampling to reduce the most visible artifact caused by reducing of the occlusion texture. Also use this to prevent occlusion on lamps, windows, screens etc.
+
+- *Enable*: Toggles the effect on/off.
+- *Mode*: What represents the brightness - either luminance or value component of HSV color model.
+- *Threshold*: Controls the level of surface brightness that can still be occluded.
+- *Falloff Width*: Width of the area in which is the occlusion gradually reduced.
+- *Falloff Softness*: How fast is the occlusion reduced.
+See the graph below on how the parameters affect the scene.
+
+![](no_vao.png)
+![](vao_luma.png)
+![](vao.png)
+
 **Effect Mode**
 
 - *Simple*: Black color occlusion.
@@ -114,6 +129,8 @@ You should place VAO Effect before any effects that change colors of the image s
 You can add the *VAO Effect* component multiple times with different settings to the same camera to create more detailed appearance.
 
 For example, you can add *VAO effect* with short radius and another with longer one. This will create scene with both short hard and longer softer shadows.
+
+If you don't want some object to cast or receive occlusion - set *Rendering Mode* of its material to *Fade* or *Transparent*. Or use plugin's *Luminance Sensitivity* option where possible.
 
 # Troubleshooting
 
