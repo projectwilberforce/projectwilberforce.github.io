@@ -29,6 +29,7 @@ You can buy VAO at [Unity Asset Store](http://u3d.as/xzs).
 - No magic variables
 - Works well on screen borders
 - Preserves shape of shadows when moving camera
+- Luminance sensitivity option
 - Compatible with Unity 5.4
 
 VAO provides additional level of visual quality by simulating soft ambient light shadows. It accentuates local geometric detail and produces shadows by nearby occluding surfaces (in the corners, cracks, holes, rough surfaces etc.). Resulting scenes have more depth and appear more realistic.
@@ -98,11 +99,12 @@ Reduces occlusion on bright surfaces - either light sources or strongly lit area
 - *Falloff Width*: Width of the area in which is the occlusion gradually reduced.
 - *Falloff Softness*: How fast is the occlusion reduced.
 
-See the graph below on how the parameters affect the scene.
-
 ![](no_vao.jpg)
+<figcaption>Without VAO enabled</figcaption>
 ![](vao_luma.jpg)
+<figcaption>VAO with luminance sensitivity</figcaption>
 ![](vao.jpg)
+<figcaption>VAO without luminance sensitivity</figcaption>
 
 **Effect Mode**
 
