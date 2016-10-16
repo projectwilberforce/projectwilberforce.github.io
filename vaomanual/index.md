@@ -99,12 +99,12 @@ Reduces occlusion on bright surfaces - either light sources or strongly lit area
 - *Falloff Width*: Width of the area in which is the occlusion gradually reduced.
 - *Falloff Softness*: How fast is the occlusion reduced.
 
-![](no_vao.jpg)
 <figcaption>Without VAO enabled</figcaption>
-![](vao_luma.jpg)
+![](no_vao.jpg)
 <figcaption>VAO with luminance sensitivity</figcaption>
-![](vao.jpg)
+![](vao_luma.jpg)
 <figcaption>VAO without luminance sensitivity</figcaption>
+![](vao.jpg)
 
 **Effect Mode**
 
