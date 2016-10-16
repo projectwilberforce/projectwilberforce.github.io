@@ -97,11 +97,12 @@ Reduces occlusion on bright surfaces - either light sources or strongly lit area
 - *Threshold*: Controls the level of surface brightness that can still be occluded.
 - *Falloff Width*: Width of the area in which is the occlusion gradually reduced.
 - *Falloff Softness*: How fast is the occlusion reduced.
+
 See the graph below on how the parameters affect the scene.
 
-![](no_vao.png)
-![](vao_luma.png)
-![](vao.png)
+![](no_vao.jpg)
+![](vao_luma.jpg)
+![](vao.jpg)
 
 **Effect Mode**
 
