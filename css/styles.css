@@ -923,3 +923,14 @@ ul ul {
 .product a:hover {
   text-shadow: none;
 }
+     
+.img-thumb {
+  float:left;
+  margin-right: 10px;
+  width: 192px;
+  margin-top: 5px;
+}
+
+.img-thumb > a {
+  border-bottom: none !important;
+}

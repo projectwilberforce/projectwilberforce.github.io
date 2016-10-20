@@ -2,13 +2,33 @@
 layout: default
 title: Project Wilberforce Webpage
 ---
-<div id="title">
-   <h1>Project Wilberforce</h1>
-   <h5>We make the virtual world a better place.</h5>
-</div>
+
 
 <div style="text-align: center;">
   <div class="product" style="display: inline-block; width:170px;" >
       <a href="vaomanual"><img src="images/vao_icon.png"></a><a href="vaomanual"><div>Volumetric Ambient Occlusion Unity&nbsp;Plugin</div></a>
   </div>    
 </div>
+
+{% for page in site.posts %}
+    <article>
+      <header>
+        <h2><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></h2>
+        <p>
+            {% if page.author %}
+                {{ page.author }} 
+            {% endif %}
+            
+            {% if page.date %}
+                <time datetime="{{ page.date | date_to_xmlschema }}">
+                    <em>{{ page.date | date: "%b %-d, %Y" }}</em>
+                </time>
+            {% endif %}
+            
+          </p>
+      </header>
+      <div>
+{{ page.excerpt }}
+      </div>
+    </article>
+{% endfor %}
