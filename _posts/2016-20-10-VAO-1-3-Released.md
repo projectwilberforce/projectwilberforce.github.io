@@ -6,6 +6,7 @@ excerpt: "Documenting my approach to using and learning Jekyll."
 tags: [vao, new releases, ssao, unity plugin, unity3d]
 layout: default
 comments: true
+permalink: /blog/:title
 ---
 
 ## {{page.title}}
