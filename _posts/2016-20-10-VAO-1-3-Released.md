@@ -1,5 +1,5 @@
 ---
-title:  "Volumetric Ambient Occlusion Unity Plugin v1.3 has been released"
+title:  "New version includes luminance sensitivity option and new random samples sets for better visual quality."
 date:   2016-10-21 18:36:42
 categories: unity plugin
 excerpt: "Documenting my approach to using and learning Jekyll."
