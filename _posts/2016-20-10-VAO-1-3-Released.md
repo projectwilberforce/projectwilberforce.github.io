@@ -1,6 +1,6 @@
 ---
 title:  "Volumetric Ambient Occlusion Unity Plugin v1.3 has been released"
-date:   2016-10-19 18:58:42
+date:   2016-10-21 18:36:42
 categories: unity plugin
 excerpt: "Documenting my approach to using and learning Jekyll."
 tags: [vao, new releases, ssao, unity plugin, unity3d]
