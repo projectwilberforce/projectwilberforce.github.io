@@ -40,7 +40,7 @@ In case of questions or further issues, please contact us at <projectwilberforce
 
 ## Screenshots
 
-<div>Try moving the sliders to see the difference:</div>
+<div id="screenshots">Try moving the sliders to see the difference:</div>
 <iframe frameborder="0" class="juxtapose" width="100%" height="380" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=ff4980d6-9947-11e6-9008-0edaf8f81e27"></iframe>
 <iframe frameborder="0" class="juxtapose" width="100%" height="380" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=137d9cf4-9948-11e6-9008-0edaf8f81e27"></iframe>
 
