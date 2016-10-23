@@ -42,7 +42,7 @@ In case of questions or further issues, please contact us at <projectwilberforce
 
 <div>Try moving the sliders to see the difference:</div>
 <iframe frameborder="0" class="juxtapose" width="100%" height="380" src="{{site.baseurl}}/sliders/slider1.html"></iframe>
-<iframe frameborder="0" class="juxtapose" width="100%" height="380" src="{{site.baseurl}}/sliders/slider1.html"></iframe>
+<iframe frameborder="0" class="juxtapose" width="100%" height="380" src="{{site.baseurl}}/sliders/slider2.html"></iframe>
 
 <div>
 <div class="img-thumb">
