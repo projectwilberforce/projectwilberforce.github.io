@@ -100,8 +100,8 @@ Reduces occlusion on bright surfaces - either light sources or strongly lit area
 - *Falloff Softness*: How fast is the occlusion reduced.
 
 <div>Try moving the sliders to see the difference:</div>
-<iframe frameborder="0" class="juxtapose" width="100%" height="380" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=91534260-9915-11e6-9008-0edaf8f81e27"></iframe>
-<iframe frameborder="0" class="juxtapose" width="100%" height="380" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=34971772-9915-11e6-9008-0edaf8f81e27"></iframe>
+<iframe frameborder="0" class="juxtapose" width="100%" height="380" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=ff4980d6-9947-11e6-9008-0edaf8f81e27"></iframe>
+<iframe frameborder="0" class="juxtapose" width="100%" height="380" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=137d9cf4-9948-11e6-9008-0edaf8f81e27"></iframe>
 
 <!--
 <figcaption>Without VAO enabled</figcaption>
