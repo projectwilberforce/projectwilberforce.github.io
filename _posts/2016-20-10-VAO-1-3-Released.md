@@ -40,10 +40,11 @@ In case of questions or further issues, please contact us at <projectwilberforce
 
 ## Screenshots
 
+<div>Try moving the sliders to see the difference:</div>
 <iframe frameborder="0" class="juxtapose" width="100%" height="380" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=91534260-9915-11e6-9008-0edaf8f81e27"></iframe>
 <iframe frameborder="0" class="juxtapose" width="100%" height="380" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=34971772-9915-11e6-9008-0edaf8f81e27"></iframe>
 
-<!--div>
+<div>
 <div class="img-thumb">
 	<a href="{{site.baseurl}}/images/screenshots/e1.png" data-lightbox="vao"><img src="{{site.baseurl}}/images/screenshots/e1_thumb.png" /></a>
 </div>
@@ -61,7 +62,7 @@ In case of questions or further issues, please contact us at <projectwilberforce
 <div class="img-thumb">
 	<a href="{{site.baseurl}}/images/screenshots/e5.png" data-lightbox="vao"><img src="{{site.baseurl}}/images/screenshots/e5_thumb.png" /></a>
 </div>
-</div-->
+</div>
 
 <div style="clear: both; padding-top: 50px;">
 
