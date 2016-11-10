@@ -1,6 +1,6 @@
 ---
-layout: vaoguide
-title: VAO Unity plugin User Guide
+layout: colorblind
+title: Colorblind Effect Unity Plugin User Guide
 ---
 # Contents
 - [Introduction](#introduction)
