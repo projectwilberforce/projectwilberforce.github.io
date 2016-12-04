@@ -85,6 +85,7 @@ Lets you switch between normal vision and various types of color vision deficien
 
 # Unity GUI
 To make CBE work on GUI assets:  
+
 1.	Select your canvas  
 2.	In canvas inspector - set the *Render Mode* to "Screen Space - Camera"  
 3.	Set *Render Camera* to the camera component of your project  
