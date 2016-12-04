@@ -8,6 +8,7 @@ title: Colorblind Effect Unity Plugin User Guide
 - [Installation](#installation)
 - [Human Vision](#human-vision)
 - [Parameters](#parameters)
+- [Unity GUI](#unity-gui)
 - [Contact Information](#contact-information)
 
 # Introduction
@@ -81,6 +82,14 @@ CBE plugin behaviour is controlled by a single parameter.
 
 **Type**
 Lets you switch between normal vision and various types of color vision deficiency.
+
+# Unity GUI
+To make CBE work on GUI assets:  
+1.	Select your canvas  
+2.	In canvas inspector - set the *Render Mode* to "Screen Space - Camera"  
+3.	Set *Render Camera* to the camera component of your project  
+4.	Adjust *Plane Distance* if necessary (setting it to *Near Clipping Plane* of your camera is the same as "Screen Space - Overlay" mode)
+![](canvas.png)
 
 # Contact Information
 In case of questions or further issues, please contact us at <projectwilberforce@gmail.com>
