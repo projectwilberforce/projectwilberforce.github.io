@@ -88,7 +88,7 @@ To make CBE work on GUI assets:
 1.	Select your canvas  
 2.	In canvas inspector - set the *Render Mode* to "Screen Space - Camera"  
 3.	Set *Render Camera* to the camera component of your project  
-4.	Adjust *Plane Distance* if necessary (setting it to *Near Clipping Plane* of your camera is the same as "Screen Space - Overlay" mode)
+4.	Adjust *Plane Distance* if necessary (setting it to *Near Clipping Plane* of your camera is the same as "Screen Space - Overlay" mode)  
 ![](canvas.png)
 
 # Contact Information
