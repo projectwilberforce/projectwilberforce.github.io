@@ -112,10 +112,16 @@ Reduces occlusion on bright surfaces - either light sources or strongly lit area
 ![](vao.jpg)
 -->
 
+
 **Effect Mode**
 
 - *Simple*: Black color occlusion.
 - *Color Tint*: Custom-set occlusion color. 
+- *Color Bleed*: Occlusion color is changed by the color of nearby surfaces (see below for more detail).
+
+**Color Bleed**
+
+lorem ipsum.
 
 **Enable Blur**
 
