@@ -13,11 +13,20 @@ permalink: /blog/:title
 
 We have released a new image effect to help with designing a better user experience for colorblind people.
 
-Colorblind Effect (CBE) plugin simulates three most common types of colorblindness. This lets gamedesigners better identify potential problems with reduced color vision
+## About CBE
+
+Colorblind Effect (CBE) plugin simulates three most common types of colorblindness. This lets gamedesigners better identify potential problems with reduced color vision.
+
+With this plugin it is easy to check if some part of the game relies too much on colors as a source of information. 
+Typical problems are:
+
+ - Color gradidents: healthbars, threat levels etc.
+ - Only color-coded information: eg. green friendly and red enemy units on minimap
+ - Overlaying colors that look similar to colorblind: GUI/HUD might be hard to see in certain areas, or something as simple as wrong combination of text and background color
 
 ![]({{site.baseurl}}/images/colorblind1.jpg)
 
-## About CBE
+## Additional information
 
 You can get CBE at [Unity Asset Store](https://www.assetstore.unity3d.com/en/#!/content/76360).
 
