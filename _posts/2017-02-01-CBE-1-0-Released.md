@@ -21,7 +21,7 @@ We have released a new image effect to help with designing a better user experie
 
 Colorblind Effect (CBE) plugin simulates three most common types of colorblindness. This lets gamedesigners better identify potential problems with reduced color vision.
 
-With this plugin it is easy to check if some part of the game relies too much on colors as a source of information. 
+With this plugin it is easy to check if some part of the game relies too much on colors as a source of information (for example, people with most common colorblindness have trouble distinguishing between red and green). 
 Typical problems are:
 
  - Color gradidents: healthbars, threat levels etc.
