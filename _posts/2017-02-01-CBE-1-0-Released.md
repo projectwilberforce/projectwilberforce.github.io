@@ -9,6 +9,10 @@ comments: true
 permalink: /blog/:title
 ---
 
+<time datetime="{{ page.date | date_to_xmlschema }}">
+  <em>{{ page.date | date: "%b %-d, %Y" }}</em>
+</time>
+
 ## {{page.title}}
 
 We have released a new image effect to help with designing a better user experience for colorblind people.
