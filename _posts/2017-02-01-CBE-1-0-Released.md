@@ -2,7 +2,7 @@
 title:  "New Release - Colorblind Effect Unity Plugin"
 date:   2017-01-02 12:30:00
 categories: unity plugin
-excerpt: "New version includes luminance sensitivity option and new random samples sets for better visual quality."
+excerpt: "We have released a new image effect to help with designing a better user experience for colorblind people."
 tags: [cbe, new releases, ux, unity plugin, unity3d]
 layout: default
 comments: true
