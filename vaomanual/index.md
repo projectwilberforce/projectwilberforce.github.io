@@ -81,6 +81,10 @@ Radius sets the distance of how far the algorithm reaches to calculate occlusion
 
 Power variable controls the hardness of the shadow, lower value causes softer shadows.
 
+**Presence**
+
+Presence makes the effect more pronounced towards the crease.
+
 **Quality**
 
 Number of samples used to calculate VAO. Choose lower settings if you need faster performance.
