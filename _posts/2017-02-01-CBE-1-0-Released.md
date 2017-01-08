@@ -41,7 +41,7 @@ Please rate, review and comment, we are looking forward to your feedback.
 In case of questions or further issues, please contact us at <projectwilberforce@gmail.com>
 
 {% if page.comments %}
-<div id="disqus_thread"></div>
+<!--<div id="disqus_thread"></div>
 <script>
 var disqus_config = function () {
 this.page.url = "{{site.url}}{{ page.url }}"; // <--- use canonical URL
@@ -56,6 +56,6 @@ s.setAttribute('data-timestamp', +new Date());
 </script>
 
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-</div>
+</div>-->
 
 {% endif %}
