@@ -15,7 +15,7 @@ title: Colorblind Effect Unity Plugin User Guide
 
 Colorblind Effect (CBE) is a Fullscreen Camera Effect for Unity 5 (5.4.0 or higher)
 
-You can buy Colorblind Effect at [Unity Asset Store]().
+You can buy Colorblind Effect at [Unity Asset Store](http://u3d.as/DYk).
 
 - Three most common types of colorblindness
 - Simple setup and control
