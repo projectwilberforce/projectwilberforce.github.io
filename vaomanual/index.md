@@ -8,7 +8,7 @@ title: VAO Unity plugin User Guide
 - [Installation](#installation)
 - [How to use](#how-to-use)
     - [Parameters](#parameters)
-    - [Tips](#tips)
+    - [Performance Tips](#tips)
 - [Troubleshooting](#troubleshooting)
     - [Near/Far Plane](#nearfar-plane)
     - [Attaching Shader](#attaching-shader)
@@ -18,7 +18,7 @@ title: VAO Unity plugin User Guide
 
 # Introduction
 
-Volumetric Ambient Occlusion (VAO) is new Screen Space Ambient Occlusion for Unity 5 (5.3.0 or higher)
+Volumetric Ambient Occlusion (VAO) is our Screen Space Ambient Occlusion for Unity 5 (5.3.0 or higher)
 
 You can buy VAO at [Unity Asset Store](http://u3d.as/xzs).
 
@@ -147,13 +147,22 @@ Use for development to display only ambient occlusion component.
 | **high power**  | ![](21.png)     | ![](22.png)
 
 
-## Tips
+## Performance and other tips
+
+**Performance tips**
+
+- Judge the quality by the final image, not AO only.
+- For the best results set *Radius* so the shadow created by the effect is around 10-20cm (4-8in).
+- To make AO effect more pronounced increase *Presence* and *Power* settings before increasing *Radius*.
+- Use appropriate number of samples (*Quality* setting) - high enough to hide aliasing.
+- Consider using *Downsampling* at high screen resoltions.
+- Use *Speed Boost* feature (currently experimental.)
+
+**Unwanted interaction with other camera effects**
 
 You should place VAO Effect before any effects that change colors of the image such as tone mapping, vignetting, blur, chromatic aberration etc. As a rule of thumb, place VAO so that it is applied as soon as possible. 
 
-You can add the *VAO Effect* component multiple times with different settings to the same camera to create more detailed appearance.
-
-For example, you can add *VAO effect* with short radius and another with longer one. This will create scene with both short hard and longer softer shadows.
+**Disabling Ambient Occlusion for specific objects**
 
 If you don't want some object to cast or receive occlusion - set *Rendering Mode* of its material to *Fade* or *Transparent*. Or use plugin's *Luminance Sensitivity* option where possible.
 
