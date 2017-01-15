@@ -20,7 +20,7 @@ title: VAO Unity plugin User Guide
 
 Volumetric Ambient Occlusion (VAO) is our Screen Space Ambient Occlusion for Unity 5 (5.3.0 or higher)
 
-You can buy VAO at [Unity Asset Store](http://u3d.as/xzs).
+You can [download free demo]() (installation guide [here](/vaodemo)) or buy VAO at [Unity Asset Store](http://u3d.as/xzs).
 
 - High performance and visual quality
 - Compatible with all Unity rendering paths (Forward, Deferred and Legacy) and anti-aliasing
@@ -93,6 +93,11 @@ Number of samples used to calculate VAO. Choose lower settings if you need faste
 
 Reduces resolution of output, use this to gain performance at the cost of quality. Try lowering quality parameter first as this reduces quality dramatically. Having high quality setting with downsampling enabled serves no purpose.
 
+**Speed Boost**
+*(currently experimental)*
+
+Speeds up the calculation by downsampling the parts without occlusion. Result in higher framerate but may cause some small loss of detail (YMMV.)
+
 **Luminance Sensitivity**
 
 Reduces occlusion on bright surfaces - either light sources or strongly lit areas. We recommend enabling this in combination with downsampling to reduce the most visible artifact caused by reducing of the occlusion texture. Also use this to prevent occlusion on lamps, windows, screens etc.
@@ -156,7 +161,7 @@ Use for development to display only ambient occlusion component.
 - To make AO effect more pronounced increase *Presence* and *Power* settings before increasing *Radius*.
 - Use appropriate number of samples (*Quality* setting) - high enough to hide aliasing.
 - Consider using *Downsampling* at high screen resoltions.
-- Use *Speed Boost* feature (currently experimental.)
+- Use *Speed Boost* feature.
 
 **Unwanted interaction with other camera effects**
 

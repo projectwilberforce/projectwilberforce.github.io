@@ -15,13 +15,13 @@ Another new version of our VAO has been released! We have both added new feature
 
 VAO is our answer to ambient occlusion problem. It has better performance and visual quality than other SSAO solutions. 
 
-[Unity Asset Store Link](http://u3d.as/xzs)
+Download [free demo]() and buy at [Unity Asset Store](http://u3d.as/xzs)
 
 ![]({{site.baseurl}}/images/social-vao-heading.jpg)
 
 ## What's new in v1.4  
 
- * [Downloadable demo here!]()
+ * [Downloadable demo here]() with [installation guide]()
  * *Color bleed* mode
  * *Presence* option to make effect more pronounced without increasing radius (which means no additional performance hit)
  * *Speed Boost* experimental optimization feature
@@ -33,14 +33,21 @@ VAO works by approximating amount of light that can reach given pixel taking vol
 
 Our algorithm works in screen space (using only normals and depth values readily available in G-Buffer). Therefore, there is no performance hit when using more complicated meshes (more polygons) and it makes use of bump textures automatically. It is also fully dynamic - there is no need for pre-calculating specific scenes and it works with both static and moving objects.
 
-In the newest version, we also provide option to gradually reduce VAO on bright surfaces such as windows, TV screens, lamps etc. making it easy to setup VAO in wide variety of scenes.
-
-You can get VAO at [Unity Asset Store](http://u3d.as/xzs).
+In the newest version, we added color bleed option. This means that on top of shadows the surfaces now cast their color onto their surroundings. We also 
 
 See [documentation here](https://projectwilberforce.github.io/vaomanual/) and [forum here](https://forum.unity3d.com/threads/volumetric-ambient-occlusion-image-effect.428426/).
 
 Please rate, review and comment, we are looking forward to your feedback.
 
 In case of questions or further issues, please contact us at <projectwilberforce@gmail.com>
+
+## Performance tips
+
+- Judge the quality by the final image, not AO only.
+- For the best results set *Radius* so the shadow created by the effect is around 10-20cm (4-8in).
+- To make AO effect more pronounced increase *Presence* and *Power* settings before increasing *Radius*.
+- Use appropriate number of samples (*Quality* setting) - high enough to hide aliasing.
+- Consider using *Downsampling* at high screen resoltions.
+- Use *Speed Boost* feature (currently experimental.)
 
 ## Screenshots
