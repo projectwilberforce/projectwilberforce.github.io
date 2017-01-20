@@ -30,7 +30,8 @@ You can [download free demo]() (installation guide [here](/vaodemo)) or buy VAO 
 - Works well on screen borders
 - Preserves shape of shadows when moving camera
 - Luminance sensitivity option
-- Compatible with Unity 5.4
+- Compatible with Unity 5.3 and higher
+- Color Bleeding feature
 
 VAO provides additional level of visual quality by simulating soft ambient light shadows. It accentuates local geometric detail and produces shadows by nearby occluding surfaces (in the corners, cracks, holes, rough surfaces etc.). Resulting scenes have more depth and appear more realistic.
 
@@ -83,7 +84,11 @@ Power variable controls the hardness of the shadow, lower value causes softer sh
 
 **Presence**
 
-Presence makes the effect more pronounced towards the crease.
+Presence makes the effect more pronounced towards the crease. 
+
+Presence turned off is closer to "physically-based" solution, however, adjust this to suit your scene and desired appearance.
+
+You can also try increasing presence rather than radius to make effect more visible and save performance.
 
 **Quality**
 
@@ -96,7 +101,7 @@ Reduces resolution of output, use this to gain performance at the cost of qualit
 **Speed Boost**
 *(currently experimental)*
 
-Speeds up the calculation by downsampling the parts without occlusion. Result in higher framerate but may cause some small loss of detail (YMMV.)
+Speeds up the calculation by downsampling the parts without occlusion. Results in higher framerate but may cause some small loss of detail (YMMV.)
 
 **Luminance Sensitivity**
 
@@ -126,7 +131,7 @@ Reduces occlusion on bright surfaces - either light sources or strongly lit area
 
 - *Simple*: Black color occlusion.
 - *Color Tint*: Custom-set occlusion color. 
-- *Color Bleed*: Occlusion color is changed by the color of nearby surfaces (see below for more detail).
+- *Color Bleed*: Additionaly to ambient occlusion, nearby surfaces "bleed" color to each other.
 
 **Color Bleed**
 
@@ -156,11 +161,12 @@ Use for development to display only ambient occlusion component.
 
 **Performance tips**
 
-- Judge the quality by the final image, not AO only.
-- For the best results set *Radius* so the shadow created by the effect is around 10-20cm (4-8in).
+- Keep radius reasonably low. For the best results set *Radius* so the shadow created by the effect is around 10-20cm (4-8in).
 - To make AO effect more pronounced increase *Presence* and *Power* settings before increasing *Radius*.
-- Use appropriate number of samples (*Quality* setting) - high enough to hide aliasing.
+- Use appropriate number of samples (*Quality* setting) - high enough to hide aliasing. There is nothing wrong with using 4-8 samples when radius is small enough.
 - Consider using *Downsampling* at high screen resoltions.
+- Judge the quality by the final image, not AO only.
+
 - Use *Speed Boost* feature.
 
 **Unwanted interaction with other camera effects**
