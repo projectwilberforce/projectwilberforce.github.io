@@ -1,6 +1,6 @@
 ---
-layout: vaoguide
-title: VAO Unity plugin User Guide
+layout: vaodemo
+title: VAO Unity plugin Demo
 ---
 
 # Volumetric Ambient Occlusion 1.4 Demo
