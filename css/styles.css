@@ -917,6 +917,7 @@ ul ul {
   text-shadow: 0.1em 0.1em 0.2em black;
   color: #efefef;
   font-weight: bold;
+  padding: 6px 12px;
 }
 
 .downloadbtn:hover {
