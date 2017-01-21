@@ -895,7 +895,7 @@ ul ul {
   margin: 0px !important;
 }
 
-a.btn {
+#header a.btn {
   float: right; 
   margin-right: 2em; 
   background-color: rgb(216, 186, 32); 
@@ -905,7 +905,21 @@ a.btn {
   font-weight: bold;
 }
 
-a.btn:hover {
+#header a.btn:hover {
+  color: white;
+  box-shadow: 0px 0px 1.5em rgb(255, 230, 99); 
+}
+
+.downloadbtn {
+  margin-right: 2em; 
+  background-color: rgb(216, 186, 32); 
+  border: 1px solid rgb(255, 230, 99); 
+  text-shadow: 0.1em 0.1em 0.2em black;
+  color: #efefef;
+  font-weight: bold;
+}
+
+.downloadbtn:hover {
   color: white;
   box-shadow: 0px 0px 1.5em rgb(255, 230, 99); 
 }

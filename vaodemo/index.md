@@ -11,7 +11,7 @@ It contains all the features of a full version, except it does not run on Unity 
 
 If you like VAO and want to use it please buy it at [Unity Asset Store](http://u3d.as/xzs) to support its development. Also let us know what you think, your feedback is welcome.
 
-<a href="https://projectwilberforce.github.io/vaodemo/VolumetricAmbientOcclusion_1_4_Demo.zip" class="btn">Download Demo</a>
+<a href="https://projectwilberforce.github.io/vaodemo/VolumetricAmbientOcclusion_1_4_Demo.zip" class="downloadbtn">Download Demo</a>
 
 Also See:
 
