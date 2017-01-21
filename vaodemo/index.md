@@ -19,6 +19,8 @@ Also See:
  - [Asset Store Link](http://u3d.as/xzs)
  - [Forum Thread](http://forum.unity3d.com/threads/volumetric-ambient-occlusion-image-effect.428426/)
 
+![](demo_screenshot.jpg)
+
 # Installation
 
 1. From Unity menu select *Assets -> Import Package -> Custom Package...*
