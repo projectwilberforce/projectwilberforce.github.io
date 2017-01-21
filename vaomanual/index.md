@@ -8,7 +8,7 @@ title: VAO Unity plugin User Guide
 - [Installation](#installation)
 - [How to use](#how-to-use)
     - [Parameters](#parameters)
-    - [Performance Tips](#tips)
+    - [Performance Tips](#performance-tips)
 - [Troubleshooting](#troubleshooting)
     - [Near/Far Plane](#nearfar-plane)
     - [Attaching Shader](#attaching-shader)
@@ -20,7 +20,7 @@ title: VAO Unity plugin User Guide
 
 Volumetric Ambient Occlusion (VAO) is our Screen Space Ambient Occlusion for Unity 5 (5.3.0 or higher)
 
-You can [download free demo]() (installation guide [here](/vaodemo)) or buy VAO at [Unity Asset Store](http://u3d.as/xzs).
+You can [download free demo](https://projectwilberforce.github.io/vaodemo) or buy VAO at [Unity Asset Store](http://u3d.as/xzs).
 
 - High performance and visual quality
 - Compatible with all Unity rendering paths (Forward, Deferred and Legacy) and anti-aliasing

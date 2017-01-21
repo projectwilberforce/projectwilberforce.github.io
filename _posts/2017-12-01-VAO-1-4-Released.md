@@ -1,6 +1,6 @@
 ---
 title:  "Volumetric Ambient Occlusion Unity Plugin v1.4 has been released + DEMO"
-date:   2016-01-12 18:36:42
+date:   2016-01-21 18:36:42
 categories: unity plugin
 excerpt: "New version includes color bleed and various speed optimizations."
 tags: [vao, new releases, ssao, unity plugin, unity3d]
@@ -15,13 +15,13 @@ Another new version of our VAO has been released! We have both added new feature
 
 VAO is our answer to ambient occlusion problem. It has better performance and visual quality than other SSAO solutions. 
 
-Download [free demo]() and buy at [Unity Asset Store](http://u3d.as/xzs)
+Download [free demo](https://projectwilberforce.github.io/vaodemo) and buy at [Unity Asset Store](http://u3d.as/xzs)
 
 ![]({{site.baseurl}}/images/social-vao-heading.jpg)
 
 ## What's new in v1.4  
 
- * [Downloadable demo here]() with [installation guide]()
+ * [Downloadable demo here](https://projectwilberforce.github.io/vaodemo)
  * *Color bleed* mode
  * *Presence* option to make effect more pronounced without increasing radius (which means no additional performance hit)
  * *Speed Boost* experimental optimization feature
@@ -49,5 +49,3 @@ In case of questions or further issues, please contact us at <projectwilberforce
 - Use appropriate number of samples (*Quality* setting) - high enough to hide aliasing.
 - Consider using *Downsampling* at high screen resoltions.
 - Use *Speed Boost* feature (currently experimental.)
-
-## Screenshots

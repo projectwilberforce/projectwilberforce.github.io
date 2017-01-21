@@ -11,11 +11,11 @@ It contains all the features of a full version, except it does not run on Unity 
 
 If you like VAO and want to use it please buy it at [Unity Asset Store](http://u3d.as/xzs) to support its development. Also let us know what you think, your feedback is welcome.
 
-<a href="#" class="btn">Download Demo</a>
+<a href="https://projectwilberforce.github.io/vaodemo/VolumetricAmbientOcclusion_1_4_Demo.zip" class="btn">Download Demo</a>
 
 Also See:
 
- - [User Manual](/vaomanual)
+ - [User Manual](https://projectwilberforce.github.io/vaomanual)
  - [Asset Store Link](http://u3d.as/xzs)
  - [Forum Thread](http://forum.unity3d.com/threads/volumetric-ambient-occlusion-image-effect.428426/)
 
