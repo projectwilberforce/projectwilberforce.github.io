@@ -141,7 +141,7 @@ Color Bleed has its own set of parameters.
 - *Quality*: sets the size of the sample set used for the color bleed (relative to AO samples). Options are 'Normal', 'Half' and 'Quarter'.
 - *Skip Backfaces*: Makes surfaces cast color only in front of them - unlike shadows, that are cast both to the front and to the back. See attached screenshots.
 
-<iframe frameborder="0" class="juxtapose" width="100%" height="270" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=28461d04-d41d-11e6-892e-0edaf8f81e27"></iframe>
+<iframe frameborder="0" class="juxtapose" width="100%" height="380" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=28461d04-d41d-11e6-892e-0edaf8f81e27"></iframe>
 
 **Enable Blur**
 
