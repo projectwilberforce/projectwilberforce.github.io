@@ -8,7 +8,7 @@ title: VAO Unity plugin User Guide
 - [Installation](#installation)
 - [How to use](#how-to-use)
     - [Parameters](#parameters)
-    - [Performance Tips](#performance-tips)
+    - [Performance Tips](#performance-and-other-tips)
 - [Troubleshooting](#troubleshooting)
     - [Near/Far Plane](#nearfar-plane)
     - [Attaching Shader](#attaching-shader)
