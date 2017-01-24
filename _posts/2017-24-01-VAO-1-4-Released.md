@@ -17,7 +17,7 @@ Another new version of VAO (our SSAO plugin) has been released! We have both add
 
 Get full version at [Unity Asset Store](http://u3d.as/xzs)
 
-![]({{site.baseurl}}/images/space_age.jpg)
+![]({{site.baseurl}}/images/space_age.png)
 
 ## What's new in v1.4  
 
