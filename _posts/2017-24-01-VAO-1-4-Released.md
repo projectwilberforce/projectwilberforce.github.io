@@ -1,6 +1,6 @@
 ---
 title:  "Volumetric Ambient Occlusion Unity Plugin v1.4 has been released + DEMO"
-date:   2016-01-24 17:36:42
+date:   2017-01-24 17:36:42
 categories: unity plugin
 excerpt: "New version includes color bleed and various speed optimizations, improved image quality and more controls."
 tags: [vao, new releases, ssao, unity plugin, unity3d]
@@ -11,7 +11,7 @@ permalink: /blog/:title
 
 ## {{page.title}}
 
-Another new version of our VAO (our SSAO plugin) has been released! We have both added new features and optimized the existing ones. New demo has also been released.
+Another new version of VAO (our SSAO plugin) has been released! We have both added new features and optimized the existing ones. New demo has also been released.
 
 <a href="https://projectwilberforce.github.io/vaodemo/" class="downloadbtn">Download Free Demo</a>
 
