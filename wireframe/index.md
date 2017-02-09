@@ -1,6 +1,6 @@
 ---
-layout: colorblind
-title: Colorblind Effect Unity Plugin User Guide
+layout: wireframe
+title: Wilberforce Wireframe Unity Plugin User Guide
 ---
 # Contents
 - [Introduction](#introduction)
