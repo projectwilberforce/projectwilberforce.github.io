@@ -7,6 +7,7 @@ title: Wilberforce Wireframe Unity Plugin User Guide
 - [Requirements](#requirements)
 - [Installation](#installation)
 - [Parameters](#parameters)
+- [How to](#how-to)
 - [Contact Information](#contact-information)
 
 # Introduction
