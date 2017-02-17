@@ -18,6 +18,8 @@ You can buy Wilberforce Wireframe at [Unity Asset Store](https://www.assetstore.
 
 Wilberforce Wireframe is currently in Beta and your feedback is welcome! Please share your ideas and features you would like to see with us at <projectwilberforce@gmail.com>.
 
+Features:
+
 - Blending between wirecolor and fillcolor
 - Supports Transparent Render Queue
 - Option for removing diagonal edges
@@ -25,7 +27,7 @@ Wilberforce Wireframe is currently in Beta and your feedback is welcome! Please 
 - Flat shading of the fill color
 - Rendering of back faces (transparent double-sided objects)
 
-Planned features (future):
+Planned features (FUTURE):
 
 - Interaction with scene lights
 - Phong shading (single-pass optimization), including textures
@@ -94,6 +96,9 @@ Using the shader is straightforward - simply assign shader as described in Insta
 Note that you can combine wireframe shader material with another materials on same object (by setting fill color to transparent, you can make underlying material visible).
 
 ## Transparent objects (Double-sided mesh)
+
+![](Wireframe_multiple.png)
+
 Most interesting effect can be achieved by rendering the object transparent, with wireframe edges visible. To achieve this, you have to apply this shader twice - once for front faces with transparent fill color and second time for back faces:
 
 1. Create two separate materials and assign `Wilberforce/Wireframe` shader to them
