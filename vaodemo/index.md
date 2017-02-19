@@ -20,6 +20,7 @@ Also See:
  - [User Manual](https://projectwilberforce.github.io/vaomanual)
  - [Asset Store Link](http://u3d.as/xzs)
  - [Forum Thread](http://forum.unity3d.com/threads/volumetric-ambient-occlusion-image-effect.428426/)
+ - [Our Other Projects](https://www.assetstore.unity3d.com/en/#!/search/page=1/sortby=popularity/query=publisher:22764)
 
 ![](demo_screenshot.jpg)
 
