@@ -96,9 +96,9 @@ Number of samples used to calculate VAO. Choose lower settings if you need faste
 
 **Adaptive Sampling**
 
-Adaptive sampling means lower quality options are used on more distant areas of the image. Ideally causes no loss of detail.
+Adaptive sampling means lower number of samples is used on more distant areas of the image. Ideally causes no loss of detail.
 
-- *Enabled Automatic*: Automatically determines where lower quality should be used. 
+- *Enabled Automatic*: Automatically determines where lower sample count should be used. 
 - *Enabled Manual*: Provides additional slider to fine-tune the change between the quality levels.
 
 **Downsampled Pre-pass**
@@ -106,7 +106,7 @@ Adaptive sampling means lower quality options are used on more distant areas of 
 Speeds up the calculation by downsampling the parts without occlusion. Results in performance boost, especially for higher resolutions.
 
 - *Greedy*: Skips areas that are unoccluded in the downsampled prepass. Fast, but may cause small loss of detail. 
-- *Careful*: Instead of skipping computes occlusion with low quality setting. Smaller performance speedup but no loss of detail. 
+- *Careful*: Instead of skipping computes occlusion with low quality setting. Smaller performance speed-up but no loss of detail. 
 
 **Downsampling**
 
