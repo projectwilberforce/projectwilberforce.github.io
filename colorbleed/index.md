@@ -112,29 +112,6 @@ Speeds up the calculation by downsampling the parts without occlusion. Results i
 
 Reduces resolution of output, use this to gain performance at the cost of quality. Try lowering quality parameter first as this reduces quality dramatically. Having high quality setting with downsampling enabled serves no purpose.
 
-**Luminance Sensitivity**
-
-Reduces occlusion on bright surfaces - either light sources or strongly lit areas. We recommend enabling this in combination with downsampling to reduce the most visible artifact caused by reducing of the occlusion texture. Also use this to prevent occlusion on lamps, windows, screens etc.
-
-- *Enable*: Toggles the effect on/off.
-- *Mode*: What represents the brightness - either luminance or value component of HSV color model.
-- *Threshold*: Controls the level of surface brightness that can still be occluded.
-- *Falloff Width*: Width of the area in which is the occlusion gradually reduced.
-- *Falloff Softness*: How fast is the occlusion reduced.
-
-<div>Try moving the sliders to see the difference:</div>
-<iframe frameborder="0" class="juxtapose" width="100%" height="380" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=ff4980d6-9947-11e6-9008-0edaf8f81e27"></iframe>
-<iframe frameborder="0" class="juxtapose" width="100%" height="380" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=137d9cf4-9948-11e6-9008-0edaf8f81e27"></iframe>
-
-<!--
-<figcaption>Without VAO enabled</figcaption>
-![](no_vao.jpg)
-<figcaption>VAO with luminance sensitivity</figcaption>
-![](vao_luma.jpg)
-<figcaption>VAO without luminance sensitivity</figcaption>
-![](vao.jpg)
--->
-
 
 **Effect Mode**
 
@@ -160,11 +137,6 @@ In case you are applying your own blur after VAO effect, you can try turning thi
 
 Use for development to display only ambient occlusion component.
 
-|                 | **low radius**  | **high radius**
-| --------------: | --------------- | ----------------
-|  **low power**  | ![](11.png)     | ![](12.png)
-| **high power**  | ![](21.png)     | ![](22.png)
-
 
 ## Performance and other tips
 
@@ -187,21 +159,6 @@ You should place VAO Effect before any effects that change colors of the image s
 If you don't want some object to cast or receive occlusion - set *Rendering Mode* of its material to *Fade* or *Transparent*. Or use plugin's *Luminance Sensitivity* option where possible.
 
 # Troubleshooting
-
-## Near/Far plane
-
-When near and far clipping planes of the camera are too far apart, banding artifacts as seen on the picture occur. Should this happen, set the clipping planes to tightly envelop the visible scene - i.e. bring far plane as close as possible.  
-
-Note that range of possible settings is determined by precision of depth buffer.
-
-<figure>
-<a href="farplanewrong.png"><img src="farplanewrong.png" alt="incorrect far plane" title="Incorrect far plane"/></a>
-<figcaption>Example of banding artifacts caused by incorrectly set far plane</figcaption>
-</figure>
-<figure>
-<a href="farplaneright.png"><img src="farplaneright.png" alt="correct far plane" title="Correct far plane"/></a>
-<figcaption>Adjusting far plane fixes the issue</figcaption>
-</figure>
 
 ## Attaching shader
 
