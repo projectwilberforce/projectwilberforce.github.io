@@ -36,7 +36,7 @@ Planned features (FUTURE):
 - Better diagonal edges removal method
 - Alternative calculation supporting DirectX 9 level hardware
 
-See [forum for discussion]() and contact us at <projectwilberforce@gmail.com> for additional support.
+See [forum for discussion](https://forum.unity3d.com/threads/wilberforce-wireframe-shader-material.460092/) and contact us at <projectwilberforce@gmail.com> for additional support.
  
 # Requirements
 

@@ -1,6 +1,6 @@
 ---
 layout: colorbleed
-title: Color Bleed Unity plugin User Guide
+title: Wilberforce Colorbleed Unity plugin User Guide
 ---
 # Contents
 - [Introduction](#introduction)
@@ -18,9 +18,9 @@ title: Color Bleed Unity plugin User Guide
 
 # Introduction
 
-Volumetric Ambient Occlusion (VAO) is our Screen Space Ambient Occlusion for Unity 5 (5.3.0 or higher)
+Wilberforce Colorbleed (WC) is our Screen Space Ambient Occlusion for Unity 5 (5.3.0 or higher)
 
-You can [download free demo](https://projectwilberforce.github.io/vaodemo) or buy VAO at [Unity Asset Store](http://u3d.as/xzs).
+You can buy Wilberforce Colorbleed at [Unity Asset Store](https://www.assetstore.unity3d.com/#!/content/85066).
 
 - High performance and visual quality
 - Compatible with all Unity rendering paths (Forward, Deferred and Legacy) and anti-aliasing
@@ -31,7 +31,6 @@ You can [download free demo](https://projectwilberforce.github.io/vaodemo) or bu
 - Preserves shape of shadows when moving camera
 - Luminance sensitivity option
 - Compatible with Unity 5.3 and higher
-- Color Bleeding feature
 
 VAO provides additional level of visual quality by simulating soft ambient light shadows. It accentuates local geometric detail and produces shadows by nearby occluding surfaces (in the corners, cracks, holes, rough surfaces etc.). Resulting scenes have more depth and appear more realistic.
 
@@ -43,7 +42,7 @@ VAO is implemented as an image effect that gets attached to the camera. It featu
 
 Plugin is compatible with all Unity rendering paths (Forward, Deferred and Legacy) and anti-aliasing.
 
-See [forum for discussion](http://forum.unity3d.com/threads/volumetric-ambient-occlusion-image-effect.428426/) and contact us at <projectwilberforce@gmail.com> for additional support.
+See [forum for discussion]() and contact us at <projectwilberforce@gmail.com> for additional support.
  
 # Requirements
 
@@ -126,8 +125,6 @@ Color Bleed has its own set of parameters.
 - *Power*: Similar to the AO Power setting - controls the intensity of the color bleed part.
 - *Quality*: sets the size of the sample set used for the color bleed (relative to AO samples). Options are 'Normal', 'Half' and 'Quarter'.
 - *Skip Backfaces*: Makes surfaces cast color only in front of them - unlike shadows, that are cast both to the front and to the back. See attached screenshots.
-
-<iframe frameborder="0" class="juxtapose" width="100%" height="380" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=28461d04-d41d-11e6-892e-0edaf8f81e27"></iframe>
 
 **Enable Blur**
 
