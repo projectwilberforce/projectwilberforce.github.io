@@ -10,10 +10,7 @@ title: Wilberforce Colorbleed Unity plugin User Guide
     - [Parameters](#parameters)
     - [Performance Tips](#performance-and-other-tips)
 - [Troubleshooting](#troubleshooting)
-    - [Near/Far Plane](#nearfar-plane)
     - [Attaching Shader](#attaching-shader)
-    - [Radius is too low](#radius-is-too-low)
-    - [Radius is too large](#radius-is-too-large)
 - [Contact Information](#contact-information)
 
 # Introduction
