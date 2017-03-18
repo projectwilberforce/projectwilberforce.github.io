@@ -18,31 +18,33 @@ title: Wilberforce Colorbleed Unity plugin User Guide
 
 # Introduction
 
-Wilberforce Colorbleed (WC) is our Screen Space Ambient Occlusion for Unity 5 (5.3.0 or higher)
+Wilberforce Colorbleed (WC) is our Screen Space Indirect Lighting Plugin for Unity 5 (5.3.0 or higher)
 
 You can buy Wilberforce Colorbleed at [Unity Asset Store](https://www.assetstore.unity3d.com/#!/content/85066).
 
 - High performance and visual quality
+- Supports Single Pass Stereo Rendering (SPSR) for Virtual Reality systems
+- Compatible with Unity Post Processing Stack
 - Compatible with all Unity rendering paths (Forward, Deferred and Legacy) and anti-aliasing
-- No haloing artefacts
-- No self-intersections
-- No magic variables
+- Luminance sensitivity
+- Option to reduce self-lighting
+- Customizable blur
 - Works well on screen borders
-- Preserves shape of shadows when moving camera
-- Luminance sensitivity option
 - Compatible with Unity 5.3 and higher
 
-VAO provides additional level of visual quality by simulating soft ambient light shadows. It accentuates local geometric detail and produces shadows by nearby occluding surfaces (in the corners, cracks, holes, rough surfaces etc.). Resulting scenes have more depth and appear more realistic.
+WC adds another layer of visual quality by simulation of indirect ambient light (i.e. light that reaches the surface by bouncing off of another surface, rather than directly from light source.) This results in objects "bleeding" their color on surfaces around them, making scenes appear more realistic.
 
-Combining classic screen-space ambient occlusion (SSAO) algorithm with a more physically based approach lets us achieve better visual quality and performance compared to classic SSAO. 
+WC started as a feature for our [Ambient Occlusion Plugin](http://u3d.as/xzs), and thus been in development for quite some time. This means that WC already implements feedback from real applications and also wide range of performance optimizations.
 
-Effect is compatible with normal&bump mapping, so there is no need for complex 3D geometry to create shadows.
+Algorithm is fully dynamic without any necessary precomputing, which means that moving objects don't pose any extra problems.
 
-VAO is implemented as an image effect that gets attached to the camera. It features only a couple of user controlled variables, which makes it easy to control to produce the desired visual appearance - no magic variables (such as Bias).
+Due to its Screen Space nature the algorithm is unaffected by level of geometry detail - runs the same way on both high and low-poly scenes.
 
-Plugin is compatible with all Unity rendering paths (Forward, Deferred and Legacy) and anti-aliasing.
+WC is implemented as an image effect that gets attached to the camera. It features a variety of user-controlled settings, which lets designer to fine-tune the final appearance and balance performance.
 
-See [forum for discussion]() and contact us at <projectwilberforce@gmail.com> for additional support.
+Plugin is compatible with Unity Post Processing Stack (Deferred rendering path), all Unity rendering paths (Forward, Deferred and Legacy) and anti-aliasing.
+
+See [forum for discussion]() and contact us at <projectwilberforce@gmail.com> for additional support. We are open to any questions or requests - after all this plugin started as as suggestion from one of our customers.
  
 # Requirements
 
@@ -60,38 +62,30 @@ See [forum for discussion]() and contact us at <projectwilberforce@gmail.com> fo
 1. Import from Asset Store.
 2. Select your camera component.  
 ![](camera.png)
-3. From *Component* menu select *Image Effects -> Rendering -> Volumetric Ambient Occlusion*.   
+3. From *Component* menu select *Image Effects -> Rendering -> Wilberforce Colorbleed*.   
 ![](addcomponent.png)
 4. VAO effect should now be visible in the *Inspector* window.  
 ![](inspector.png)
-5. If property VAO shader is not set to *"Hidden/Wilberforce/VAOShader"* see Troubleshooting [section below](#attaching-shader) on how to fix it.  
+5. If property VAO shader is not set to *"Hidden/Wilberforce/Colorbleed"* see Troubleshooting [section below](#attaching-shader) on how to fix it.  
 ![](noshader.png)
 
 # How to Use
 
 ## Parameters
 
-VAO effect behaviour is controlled by a couple of easy to use parameters.
+WC effect behaviour is controlled by these parameters.
 
 **Radius**
 
-Radius sets the distance of how far the algorithm reaches to calculate occlusion. Higher radius means longer shadows caused by objects further away.
+Radius sets the distance of how far the algorithm reaches to sample surface colors. Higher radius means longer colorbleed caused by objects further away.
 
 **Power**
 
-Power variable controls the hardness of the shadow, lower value causes softer shadows.
-
-**Presence**
-
-Presence makes the effect more pronounced towards the crease. 
-
-Presence turned off is closer to "physically-based" solution, however, adjust this to suit your scene and desired appearance.
-
-You can also try increasing presence rather than radius to make effect more visible and save performance.
+Power variable controls the saturation of the color, lower value causes less pronounced result.
 
 **Quality**
 
-Number of samples used to calculate VAO. Choose lower settings if you need faster performance.
+Number of samples used to calculate WC. Select lower settings if you need faster performance.
 
 **Adaptive Sampling**
 
@@ -102,54 +96,48 @@ Adaptive sampling means lower number of samples is used on more distant areas of
 
 **Downsampled Pre-pass**
 
-Speeds up the calculation by downsampling the parts without occlusion. Results in performance boost, especially for higher resolutions.
+Speeds up the calculation by downsampling the parts with less colorbleed. Results in performance boost, especially for higher resolutions.
 
-- *Greedy*: Skips areas that are unoccluded in the downsampled prepass. Fast, but may cause small loss of detail. 
-- *Careful*: Instead of skipping computes occlusion with low quality setting. Smaller performance speed-up but no loss of detail. 
+- *Greedy*: Skips areas that are below certain threshold of color in the downsampled prepass. Fast, but may cause small loss of detail. 
+- *Careful*: Instead of skipping computes colorbleed with low quality setting. Smaller performance speed-up but no loss of detail. 
 
 **Downsampling**
 
 Reduces resolution of output, use this to gain performance at the cost of quality. Try lowering quality parameter first as this reduces quality dramatically. Having high quality setting with downsampling enabled serves no purpose.
+Alternatively, use this option if you have some sort of supersampling enabled - as high pixel density would have adverse effect on performance without much visual impact.
 
+**Luminance Sensitivity**
 
-**Effect Mode**
+Reduces colorbleed effect on bright surfaces - either light sources or strongly lit areas. We recommend enabling this in combination with downsampling to reduce the most visible artifact caused by reducing of the occlusion texture. Also use this to prevent colorbleed on lamps, windows, screens etc.
 
-- *Simple*: Black color occlusion.
-- *Color Tint*: Custom-set occlusion color. 
-- *Color Bleed*: Additionaly to ambient occlusion, nearby surfaces "bleed" color to each other.
+- *Enable*: Toggles the effect on/off.
+- *Mode*: What represents the brightness - either luminance or value component of HSV color model.
+- *Threshold*: Controls the level of surface brightness that can still be affected by colorbleed.
+- *Falloff Width*: Width of the area in which is the colorbleed gradually reduced.
+- *Falloff Softness*: How fast is the colorbleed reduced.
 
-**Color Bleed**
+**Skip Backfaces** 
 
-Color Bleed has its own set of parameters.
+Makes surfaces cast color only in front of them - unlike shadows, that are cast both to the front and to the back. See attached screenshots.
 
-- *Power*: Similar to the AO Power setting - controls the intensity of the color bleed part.
-- *Quality*: sets the size of the sample set used for the color bleed (relative to AO samples). Options are 'Normal', 'Half' and 'Quarter'.
-- *Skip Backfaces*: Makes surfaces cast color only in front of them - unlike shadows, that are cast both to the front and to the back. See attached screenshots.
+<iframe frameborder="0" class="juxtapose" width="100%" height="380" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=28461d04-d41d-11e6-892e-0edaf8f81e27"></iframe>
 
 **Enable Blur**
 
-In case you are applying your own blur after VAO effect, you can try turning this off to save performance. Blur step included in VAO is fast and is part of its visual appearance, so you might consider keeping it on all the time.
+In case you are applying your own blur after WC effect, you can try turning this off to save performance. Blur step included in WC is fast and is part of its visual appearance, so you might consider keeping it on all the time.
 
-**Output AO only**
+**Output Colorbleed only**
 
-Use for development to display only ambient occlusion component.
-
+Use for development to display only colorbleed component.
 
 ## Performance and other tips
 
 **Performance tips**
 
-- Keep radius reasonably low. For the best results set *Radius* so the shadow created by the effect is around 10-20cm (4-8in).
-- To make AO effect more pronounced increase *Presence* and *Power* settings before increasing *Radius*.
 - Use appropriate number of samples (*Quality* setting) - high enough to hide aliasing. There is nothing wrong with using 4-8 samples when radius is small enough.
 - Consider using *Downsampling* at high screen resoltions.
-- Judge the quality by the final image, not AO only.
-
-- Use *Speed Boost* feature.
-
-**Unwanted interaction with other camera effects**
-
-You should place VAO Effect before any effects that change colors of the image such as tone mapping, vignetting, blur, chromatic aberration etc. As a rule of thumb, place VAO so that it is applied as soon as possible. 
+- Judge the quality by the final image, not Colorbleed part only.
+- Use *Adaptive Sampling* and *Downsampled Pre-pass* feature.
 
 **Disabling Ambient Occlusion for specific objects**
 

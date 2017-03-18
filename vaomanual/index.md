@@ -111,6 +111,7 @@ Speeds up the calculation by downsampling the parts without occlusion. Results i
 **Downsampling**
 
 Reduces resolution of output, use this to gain performance at the cost of quality. Try lowering quality parameter first as this reduces quality dramatically. Having high quality setting with downsampling enabled serves no purpose.
+Alternatively, use this option if you have some sort of supersampling enabled - as high pixel density would have adverse effect on performance without much visual impact.
 
 **Luminance Sensitivity**
 
@@ -175,8 +176,7 @@ Use for development to display only ambient occlusion component.
 - Use appropriate number of samples (*Quality* setting) - high enough to hide aliasing. There is nothing wrong with using 4-8 samples when radius is small enough.
 - Consider using *Downsampling* at high screen resoltions.
 - Judge the quality by the final image, not AO only.
-
-- Use *Speed Boost* feature.
+- Use *Adaptive Sampling* and *Downsampled Pre-pass* feature.
 
 **Unwanted interaction with other camera effects**
 
