@@ -23,6 +23,7 @@ Volumetric Ambient Occlusion (VAO) is our Screen Space Ambient Occlusion for Uni
 You can [download free demo](https://projectwilberforce.github.io/vaodemo) or buy VAO at [Unity Asset Store](http://u3d.as/xzs).
 
 - High performance and visual quality
+- Compatible with other image effects including Unity Post-Processing stack
 - Compatible with all Unity rendering paths (Forward, Deferred and Legacy) and anti-aliasing
 - No haloing artefacts
 - No self-intersections
@@ -108,6 +109,14 @@ Speeds up the calculation by downsampling the parts without occlusion. Results i
 - *Greedy*: Skips areas that are unoccluded in the downsampled prepass. Fast, but may cause small loss of detail. 
 - *Careful*: Instead of skipping computes occlusion with low quality setting. Smaller performance speed-up but no loss of detail. 
 
+**Command Buffer**
+
+Insert effect via command buffer (BeforeImageEffectsOpaque event)
+
+**GBuffer Depth&Normal**
+
+Take depth&normals from GBuffer of deferred rendering path, use this for better precision. Note that this feature will cause some performance drop.
+
 **Downsampling**
 
 Reduces resolution of output, use this to gain performance at the cost of quality. Try lowering quality parameter first as this reduces quality dramatically. Having high quality setting with downsampling enabled serves no purpose.
@@ -153,9 +162,17 @@ Color Bleed has its own set of parameters.
 
 <iframe frameborder="0" class="juxtapose" width="100%" height="380" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=28461d04-d41d-11e6-892e-0edaf8f81e27"></iframe>
 
-**Enable Blur**
+**Blur Mode**
 
-In case you are applying your own blur after VAO effect, you can try turning this off to save performance. Blur step included in VAO is fast and is part of its visual appearance, so you might consider keeping it on all the time.
+In case you are applying your own blur after VAO effect, you can try turning this off to save performance. Blur implementations included in VAO are fast and a part of its visual appearance, so you might consider keeping it on all the time.
+
+**Basic**
+
+Simple uniform 3x3 blur
+
+**Enhanced**
+
+If you need extra control over how is the occlusion blurred - with controls size and sharpness. Sizes of 3 or 5 can be faster than basic blur, but higher values will be slower. Sharpness does not affect performance.
 
 **Output AO only**
 
