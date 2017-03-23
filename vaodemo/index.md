@@ -3,7 +3,7 @@ layout: vaodemo
 title: VAO Unity plugin Demo
 ---
 
-# Volumetric Ambient Occlusion 1.5 Demo
+# Volumetric Ambient Occlusion 1.6 Demo
 
 **[2017/23/3] UPDATED** *to version 1.6 (Command buffer implementation, Unity Post-process stack compatibility, Customizable Blur)*
 
