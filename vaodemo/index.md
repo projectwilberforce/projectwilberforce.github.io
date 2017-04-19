@@ -3,7 +3,9 @@ layout: vaodemo
 title: VAO Unity plugin Demo
 ---
 
-# Volumetric Ambient Occlusion 1.6 Demo
+# Volumetric Ambient Occlusion 1.6.1 Demo
+
+**[2017/19/4] UPDATED** *to version 1.6.1 (Fixed flickering and loss of detail bugs, fixed undo command)*
 
 **[2017/23/3] UPDATED** *to version 1.6 (Command buffer implementation, Unity Post-process stack compatibility, Customizable Blur)*
 
@@ -17,9 +19,9 @@ It contains all the features of a full version, except it does not run on Unity 
 
 If you like VAO and want to use it please buy it at [Unity Asset Store](http://u3d.as/xzs) to support its development. Also let us know what you think, your feedback is welcome.
 
-<a href="https://projectwilberforce.github.io/vaodemo/VolumetricAmbientOcclusion_1_6_Demo.zip" class="downloadbtn">Download Demo</a>
+<a href="https://projectwilberforce.github.io/vaodemo/VolumetricAmbientOcclusion_1_6_1_Demo.zip" class="downloadbtn">Download Demo</a>
 
-<a href="https://projectwilberforce.github.io/vaodemo/VolumetricAmbientOcclusion_1_6_Demo_Small.zip">Download Demo without sample scene (smaller and faster import)</a>
+<a href="https://projectwilberforce.github.io/vaodemo/VolumetricAmbientOcclusion_1_6_1_Demo_Small.zip">Download Demo without sample scene (smaller and faster import)</a>
 
 Also See:
 
