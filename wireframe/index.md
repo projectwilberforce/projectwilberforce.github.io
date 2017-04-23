@@ -16,6 +16,8 @@ Wilberforce Wireframe (WW) is a Shader for Unity 5 (5.3.6 or higher)
 
 You can buy Wilberforce Wireframe at [Unity Asset Store](https://www.assetstore.unity3d.com/#!/content/81663).
 
+Please rate our plugin [on Asset Store](https://www.assetstore.unity3d.com/en/#!/account/downloads/search=Final%20Wireframe) to support its development.
+
 Wilberforce Wireframe is currently in Beta and your feedback is welcome! Please share your ideas and features you would like to see with us at <projectwilberforce@gmail.com>.
 
 Features:
