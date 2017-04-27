@@ -59,11 +59,11 @@ See [forum for discussion]() and contact us at <projectwilberforce@gmail.com> fo
 1. Import from Asset Store.
 2. Select your camera component.  
 ![](camera.png)
-3. From *Component* menu select *Image Effects -> Rendering -> Wilberforce Colorbleed*.   
+3. From *Component* menu select *Image Effects -> Rendering -> Color Bleeding*.   
 ![](addcomponent.png)
-4. VAO effect should now be visible in the *Inspector* window.  
+4. Colorbleed effect should now be visible in the *Inspector* window.  
 ![](inspector.png)
-5. If property VAO shader is not set to *"Hidden/Wilberforce/Colorbleed"* see Troubleshooting [section below](#attaching-shader) on how to fix it.  
+5. If property Colorbleed shader is not set to *"Hidden/Wilberforce/Colorbleed"* see Troubleshooting [section below](#attaching-shader) on how to fix it.  
 ![](noshader.png)
 
 # How to Use
@@ -72,6 +72,8 @@ See [forum for discussion]() and contact us at <projectwilberforce@gmail.com> fo
 
 WC effect behaviour is controlled by these parameters.
 
+**Algorithm**
+
 **Radius**
 
 Radius sets the distance of how far the algorithm reaches to sample surface colors. Higher radius means longer colorbleed caused by objects further away.
@@ -79,6 +81,16 @@ Radius sets the distance of how far the algorithm reaches to sample surface colo
 **Power**
 
 Power variable controls the saturation of the color, lower value causes less pronounced result.
+
+**Saturation**
+
+**Raymarching Steps**
+
+**Skip Backfaces**
+
+Makes surfaces cast color only in front of them - unlike shadows, that are cast both to the front and to the back. See attached screenshots.
+
+**Skip B-faces adjust**
 
 **Quality**
 
@@ -96,7 +108,7 @@ Adaptive sampling means lower number of samples is used on more distant areas of
 Speeds up the calculation by downsampling the parts with less colorbleed. Results in performance boost, especially for higher resolutions.
 
 - *Greedy*: Skips areas that are below certain threshold of color in the downsampled prepass. Fast, but may cause small loss of detail. 
-- *Careful*: Instead of skipping computes colorbleed with low quality setting. Smaller performance speed-up but no loss of detail. 
+- *Careful*: Instead of skipping computes colorbleed with low quality setting. Smaller performance gain but no loss of detail. 
 
 **Downsampling**
 
@@ -113,15 +125,9 @@ Reduces colorbleed effect on bright surfaces - either light sources or strongly 
 - *Falloff Width*: Width of the area in which is the colorbleed gradually reduced.
 - *Falloff Softness*: How fast is the colorbleed reduced.
 
-**Skip Backfaces** 
-
-Makes surfaces cast color only in front of them - unlike shadows, that are cast both to the front and to the back. See attached screenshots.
-
-<iframe frameborder="0" class="juxtapose" width="100%" height="380" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=28461d04-d41d-11e6-892e-0edaf8f81e27"></iframe>
-
 **Enable Blur**
 
-In case you are applying your own blur after WC effect, you can try turning this off to save performance. Blur step included in WC is fast and is part of its visual appearance, so you might consider keeping it on all the time.
+In case you are applying your own blur after WC effect, you can try turning this off to save performance. Blur step included in WC is fast and is part of its visual appearance, so you might consider keeping it on all the time. We include controls of size and sharpness. Note that high values (e.g. 7 and above) will slow down the computation. Sharpness does not affect performance.
 
 **Output Colorbleed only**
 
@@ -136,9 +142,9 @@ Use for development to display only colorbleed component.
 - Judge the quality by the final image, not Colorbleed part only.
 - Use *Adaptive Sampling* and *Downsampled Pre-pass* feature.
 
-**Disabling Ambient Occlusion for specific objects**
+**Disabling Colorbleed for specific objects**
 
-If you don't want some object to cast or receive occlusion - set *Rendering Mode* of its material to *Fade* or *Transparent*. Or use plugin's *Luminance Sensitivity* option where possible.
+If you don't want some object to cast or receive color - set *Rendering Mode* of its material to *Fade* or *Transparent*. Or use plugin's *Luminance Sensitivity* option where possible.
 
 # Troubleshooting
 
