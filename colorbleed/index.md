@@ -19,6 +19,8 @@ Wilberforce Colorbleed (WC) is our Screen Space Indirect Lighting Plugin for Uni
 
 You can buy Wilberforce Colorbleed at [Unity Asset Store](https://www.assetstore.unity3d.com/#!/content/85066).
 
+Please consider [rating the asset](https://www.assetstore.unity3d.com/en/#!/account/downloads/search=Colorbleed) to help others discover it.
+
 - High performance and visual quality
 - Supports Single Pass Stereo Rendering (SPSR) for Virtual Reality systems
 - Compatible with Unity Post Processing Stack
@@ -73,6 +75,10 @@ See [forum for discussion]() and contact us at <projectwilberforce@gmail.com> fo
 WC effect behaviour is controlled by these parameters.
 
 **Algorithm**
+We provide two variants of the colorbleed effect.
+
+- *Point Cloud*: Point cloud queries the color buffer once for each sample - this makes it fast and more suitable for real-time applications.
+- *Raymarching*: Depth and color buffer are queried multiple times (as specified by *Raymarching Steps* parameter) at uniform intervals. This creates more accurate appearance at the cost of performance. Raymarching with lower step counts (~4) can be still usable for games applications depending on the available GPU resources. High step counts are aimed at models and scenes visualisations, screenshots etc.
 
 **Radius**
 
@@ -80,17 +86,19 @@ Radius sets the distance of how far the algorithm reaches to sample surface colo
 
 **Power**
 
-Power variable controls the saturation of the color, lower value causes less pronounced result.
+Turn higher to create more pronounced result.
 
 **Saturation**
 
-**Raymarching Steps**
+Used to control saturation of the resulting color. When turned all the way down, the appearance is similar to [Ambient Occlusion](http://u3d.as/xzs).
 
-**Skip Backfaces**
+**Limit Backfaces**
 
 Makes surfaces cast color only in front of them - unlike shadows, that are cast both to the front and to the back. See attached screenshots.
 
-**Skip B-faces adjust**
+**Backface Suppression**
+
+Controls the degree of backface suppression. Note that complete suppression creates a sharp falloff of colorbleed at certain edges.
 
 **Quality**
 
@@ -117,7 +125,7 @@ Alternatively, use this option if you have some sort of supersampling enabled - 
 
 **Luminance Sensitivity**
 
-Reduces colorbleed effect on bright surfaces - either light sources or strongly lit areas. We recommend enabling this in combination with downsampling to reduce the most visible artifact caused by reducing of the occlusion texture. Also use this to prevent colorbleed on lamps, windows, screens etc.
+Reduces colorbleed effect on bright surfaces - either light sources or strongly lit areas. We recommend enabling this in combination with downsampling to reduce the most visible artifact caused by reducing of the colorbleed texture. Also use this to prevent colorbleed on lamps, windows, screens etc.
 
 - *Enable*: Toggles the effect on/off.
 - *Mode*: What represents the brightness - either luminance or value component of HSV color model.
@@ -138,7 +146,7 @@ Use for development to display only colorbleed component.
 **Performance tips**
 
 - Use appropriate number of samples (*Quality* setting) - high enough to hide aliasing. There is nothing wrong with using 4-8 samples when radius is small enough.
-- Consider using *Downsampling* at high screen resoltions.
+- Consider using *Downsampling* at high screen resolutions.
 - Judge the quality by the final image, not Colorbleed part only.
 - Use *Adaptive Sampling* and *Downsampled Pre-pass* feature.
 
