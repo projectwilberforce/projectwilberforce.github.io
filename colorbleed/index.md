@@ -31,11 +31,13 @@ Please consider [rating the asset](https://www.assetstore.unity3d.com/en/#!/acco
 - Works well on screen borders
 - Compatible with Unity 5.3 and higher
 
-WC adds another layer of visual quality by simulation of indirect ambient light (i.e. light that reaches the surface by bouncing off of another surface, rather than directly from light source.) This results in objects "bleeding" their color on surfaces around them, making scenes appear more realistic.
+WC adds another layer of visual quality by simulation of indirect ambient light (i.e. light that reaches the surface by bouncing off of another surface, rather than directly from light source.) This results in objects "bleeding" their color on surfaces around them, making scenes appear more realistic. This effect also adds nice atmosphere to the image.
 
-WC started as a feature for our [Ambient Occlusion Plugin](http://u3d.as/xzs), and thus been in development for quite some time. This means that WC already implements feedback from real applications and also wide range of performance optimizations.
+WC started as a feature for our [Volumetric Ambient Occlusion (VAO) Plugin](http://u3d.as/xzs), and thus been in development for quite some time. Integration in VAO imposed a lot of limitations, so we decided to create a standalone color bleeding plugin without restrictions. This means that WC already implements feedback from real applications and also wide range of performance optimizations.
 
-Algorithm is fully dynamic without any necessary precomputing, which means that moving objects don't pose any extra problems.
+We provide two algorithms - "Point Cloud" for real time applications and "Raymarching" for high quality and fast hardware. Raymarching is suitable for visualizations and still renders.
+
+Both algorithms are fully dynamic without any necessary precomputing, which means that moving objects don't pose any extra problems.
 
 Due to its Screen Space nature the algorithm is unaffected by level of geometry detail - runs the same way on both high and low-poly scenes.
 
@@ -61,7 +63,7 @@ See [forum for discussion]() and contact us at <projectwilberforce@gmail.com> fo
 1. Import from Asset Store.
 2. Select your camera component.  
 ![](camera.png)
-3. From *Component* menu select *Image Effects -> Rendering -> Color Bleeding*.   
+3. From *Component* menu select *Image Effects -> Rendering -> Colorbleed*.   
 ![](addcomponent.png)
 4. Colorbleed effect should now be visible in the *Inspector* window.  
 ![](inspector.png)
@@ -94,7 +96,7 @@ Used to control saturation of the resulting color. When turned all the way down,
 
 **Limit Backfaces**
 
-Makes surfaces cast color only in front of them - unlike shadows, that are cast both to the front and to the back. See attached screenshots.
+Makes surfaces cast color only in front of them - unlike shadows, that are cast both to the front and to the back.
 
 **Backface Suppression**
 
