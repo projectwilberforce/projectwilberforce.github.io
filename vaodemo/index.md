@@ -36,7 +36,7 @@ Also See:
 
 1. From Unity menu select *Assets -> Import Package -> Custom Package...*
 ![](install1.png)
-2. Locate and select file *VolumetricAmbientOcclusion_1_4_Demo.unitypackage*  
+2. Locate and select file *VolumetricAmbientOcclusion_1_6_1_Demo.unitypackage*  
 3. Click *Import*   
 ![](install2.png)
 4. In your *Project* window, open *Assets -> Volumetric Ambient Occlusion -> Demo -> VAO Demo Scene*  
