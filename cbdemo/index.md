@@ -11,9 +11,8 @@ It contains all the features of a full version, except it does not run on Unity 
 
 If you like VAO and want to use it please buy it at [Unity Asset Store](https://www.assetstore.unity3d.com/#!/content/85066) to support its development. Also let us know what you think, your feedback is welcome.
 
-<a href="https://projectwilberforce.github.io/cbdemo/VolumetricAmbientOcclusion_1_6_1_Demo.zip" class="downloadbtn">Download Demo</a>
+<a href="https://projectwilberforce.github.io/cbdemo/Wilberforce_Colorbleed_1_0_Demo.zip" class="downloadbtn">Download Demo</a>
 
-<a href="https://projectwilberforce.github.io/cbdemo/VolumetricAmbientOcclusion_1_6_1_Demo_Small.zip">Download Demo without sample scene (smaller and faster import)</a>
 
 Also See:
 
@@ -28,12 +27,12 @@ Also See:
 
 1. From Unity menu select *Assets -> Import Package -> Custom Package...*
 ![](install1.png)
-2. Locate and select file *VolumetricAmbientOcclusion_1_4_Demo.unitypackage*  
+2. Locate and select file *Wilberforce_Colorbleed_1_0_Demo.unitypackage*  
 3. Click *Import*   
 ![](install2.png)
-4. In your *Project* window, open *Assets -> Volumetric Ambient Occlusion -> Demo -> VAO Demo Scene*  
+4. In your *Project* window, open *Assets -> Wilberforce Colorbleed -> Demo -> Demo Scene*  
 ![](install3.png)
-5. VAO is attached to Main Camera, select *Main Camera* in *Hiearchy* window and you can change settings in the *Inspector*.
+5. Colorbleed is attached to Main Camera, select *Main Camera* in *Hiearchy* window and you can change settings in the *Inspector*.
 ![](install4.png)
 6. For more details on the settings check the plugin [user guide](/colorbleed)
 
