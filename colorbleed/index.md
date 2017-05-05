@@ -17,7 +17,7 @@ title: Wilberforce Colorbleed Unity plugin User Guide
 
 Wilberforce Colorbleed (WC) is our Screen Space Indirect Lighting Plugin for Unity 5 (5.3.0 or higher)
 
-You can buy Wilberforce Colorbleed at [Unity Asset Store](https://www.assetstore.unity3d.com/#!/content/85066).
+You can [download free demo](https://projectwilberforce.github.io/cbdemo) or buy Wilberforce Colorbleed at [Unity Asset Store](https://www.assetstore.unity3d.com/#!/content/85066).
 
 Please consider [rating the asset](https://www.assetstore.unity3d.com/en/#!/account/downloads/search=Colorbleed) to help others discover it.
 
