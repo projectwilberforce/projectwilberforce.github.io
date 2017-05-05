@@ -90,6 +90,18 @@ Radius sets the distance of how far the algorithm reaches to sample surface colo
 
 Turn higher to create more pronounced result.
 
+**Presence**
+
+Presence makes the effect more pronounced towards the crease.
+
+Presence turned off is closer to “physically-based” solution, however, adjust this to suit your scene and desired appearance.
+
+You can also try increasing presence rather than radius to make effect more visible and save performance.
+
+**Brightness**
+
+This setting supresses the dark shadows. Use this if you want only the transfer of colors.
+
 **Saturation**
 
 Used to control saturation of the resulting color. When turned all the way down, the appearance is similar to [Ambient Occlusion](http://u3d.as/xzs).
