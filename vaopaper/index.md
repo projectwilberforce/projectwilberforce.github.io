@@ -6,7 +6,7 @@ title: VAO++: Practical Volumetric Ambient Occlusion for Games
 # VAO++: Practical Volumetric Ambient Occlusion for Games
 
 ## Paper
-Will be available after presentation on 21/7/2017  
+Will be available after presentation on 21/6/2017  
 Preprint for Eurographics Symposium on Rendering - Experimental Ideas & Implementation (2017) 
 
 ## Slides
