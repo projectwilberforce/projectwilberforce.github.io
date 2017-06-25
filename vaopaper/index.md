@@ -15,6 +15,12 @@ Preprint for Eurographics Symposium on Rendering - Experimental Ideas & Implemen
 ## Slides
 [PDF version](vao_presentation.pdf) of presentation.
 
+## Video
+
+<div style="text-align: center;">
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/4JnJhXIXCMQ" frameborder="0" allowfullscreen></iframe>
+</div>
+
 ## Bibliography
 ```
 @inproceedings{EGSR-Experimental_Ideas_Implementations:031-039:2017,
