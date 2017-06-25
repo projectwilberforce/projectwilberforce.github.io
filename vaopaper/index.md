@@ -5,17 +5,29 @@ title: VAO++: Practical Volumetric Ambient Occlusion for Games
 
 # VAO++: Practical Volumetric Ambient Occlusion for Games
 
-Jakub Bokšanský, Adam Pospíšil, Jiří Bittner
+Jakub Bokšanský, Adam Pospíšil and Jiří Bittner
 
 ## Paper
-Downloadable PDF version [here](VAOPlusPlus.pdf).  
+
+<div style="display: inline;">
+	<a href="VAOPlusPlus.pdf">
+		<img src="../images/pdf_vao_paper.png" style="float:left;">
+	</a>
+</div>
+
+<div style="display: inline;">
+Downloadable PDF version of [paper here](VAOPlusPlus.pdf).  
 Preprint for Eurographics Symposium on Rendering - Experimental Ideas & Implementation (2017) 
+</div>
 
 ### Abstract
+
+<div style="text-align: justify;">
 *Ambient occlusion is one of the commonly used methods to increase visual fidelity in real-time rendering applications. We propose several extensions of the recently introduced volumetric ambient occlusion method. These extensions improve the properties of the methods with a particular focus on the quality vs performance tradeoff and wide applicability in contemporary games. We describe the implementation of the proposed algorithm and its extensions. We implemented the method as a camera effect within the Unity game engine. The results show that our implementation compares favorably with the standard ambient occlusion in Unity both in terms of quality and speed.*
+</div>
 
 ## Slides
-[PDF version](vao_presentation.pdf) of presentation slides at Eurographics Symposium on Rendering on 19th of June 2017.
+[PDF version](vao_presentation.pdf) of presentation slides at Eurographics Symposium on Rendering (19th of June 2017).
 
 ## Video
 
