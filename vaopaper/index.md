@@ -15,15 +15,15 @@ Jakub Bokšanský, Adam Pospíšil and Jiří Bittner
 	</a>
 </div>
 
-<div style="display: inline; margin:5px;">
-Downloadable PDF version of <a href="VAOPlusPlus.pdf">paper here</a>.  
+<div style="display: inline; margin:5px; top: 20px; position: relative;">
+Downloadable PDF version of <a href="VAOPlusPlus.pdf">paper here</a>.<br />  
 Preprint for Eurographics Symposium on Rendering - Experimental Ideas & Implementation (2017) 
 </div>
 
 ## Abstract
 
-<div style="text-align: justify;">
-*Ambient occlusion is one of the commonly used methods to increase visual fidelity in real-time rendering applications. We propose several extensions of the recently introduced volumetric ambient occlusion method. These extensions improve the properties of the methods with a particular focus on the quality vs performance tradeoff and wide applicability in contemporary games. We describe the implementation of the proposed algorithm and its extensions. We implemented the method as a camera effect within the Unity game engine. The results show that our implementation compares favorably with the standard ambient occlusion in Unity both in terms of quality and speed.*
+<div style="text-align: justify; font-style: italic;">
+Ambient occlusion is one of the commonly used methods to increase visual fidelity in real-time rendering applications. We propose several extensions of the recently introduced volumetric ambient occlusion method. These extensions improve the properties of the methods with a particular focus on the quality vs performance tradeoff and wide applicability in contemporary games. We describe the implementation of the proposed algorithm and its extensions. We implemented the method as a camera effect within the Unity game engine. The results show that our implementation compares favorably with the standard ambient occlusion in Unity both in terms of quality and speed.
 </div>
 
 ## Slides
