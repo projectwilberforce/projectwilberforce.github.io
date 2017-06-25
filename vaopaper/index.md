@@ -15,9 +15,9 @@ Jakub Bokšanský, Adam Pospíšil and Jiří Bittner
 	</a>
 </div>
 
-<div style="display: inline; margin:5px; top: 20px; position: relative;">
+<div style="display: inline; margin:5px; top: 20px; left: 10px; position: relative;">
 Downloadable PDF version of <a href="VAOPlusPlus.pdf">paper here</a>.<br />  
-Preprint for Eurographics Symposium on Rendering - Experimental Ideas & Implementation (2017) 
+<span style="position: relative; top: 5px;">Preprint for Eurographics Symposium on Rendering - Experimental Ideas & Implementation (2017)</span>
 </div>
 
 ## Abstract
