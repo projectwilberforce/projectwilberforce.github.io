@@ -18,7 +18,7 @@ Preprint for Eurographics Symposium on Rendering - Experimental Ideas & Implemen
 ## Video
 
 <div style="text-align: center;">
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/4JnJhXIXCMQ" frameborder="0" allowfullscreen></iframe>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/RHXVSfM1Jyg" frameborder="0" allowfullscreen></iframe>
 </div>
 
 ## Bibliography
