@@ -19,6 +19,8 @@ Our new plugin adds colorbleeding as a post-processing image effect - in realtim
 
 ## About Colorbleed
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4JnJhXIXCMQ" frameborder="0" allowfullscreen></iframe>
+
 Color bleeding is when reflected light transfers the color of surface to surrounding objects. This resembles reflections on matte surfaces. Add new levels of visual quality to your scene with this great asset. Easy to use and control, lets you select exactly the balance of performance and quality your project deserves.
 
 Implemented as two different algorithms that makes the asset perfect for both realtime graphics in games and for more demanding pre-rendered animations or stills.
