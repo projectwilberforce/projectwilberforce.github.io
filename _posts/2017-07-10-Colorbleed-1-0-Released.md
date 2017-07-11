@@ -36,5 +36,3 @@ See [documentation here](https://projectwilberforce.github.io/colorbleed/) and [
 Please rate, review and comment, we are looking forward to your feedback.
 
 In case of questions or further issues, please contact us at <projectwilberforce@gmail.com>
-
-{% endif %}
