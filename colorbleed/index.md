@@ -45,7 +45,7 @@ WC is implemented as an image effect that gets attached to the camera. It featur
 
 Plugin is compatible with Unity Post Processing Stack (Deferred rendering path), all Unity rendering paths (Forward, Deferred and Legacy) and anti-aliasing.
 
-See [forum for discussion]() and contact us at <projectwilberforce@gmail.com> for additional support. We are open to any questions or requests - after all this plugin started as as suggestion from one of our customers.
+See [forum for discussion](https://forum.unity3d.com/threads/colorbleed-image-effect.473033/) and contact us at <projectwilberforce@gmail.com> for additional support. We are open to any questions or requests - after all this plugin started as as suggestion from one of our customers.
  
 # Requirements
 

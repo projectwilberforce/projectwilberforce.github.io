@@ -18,7 +18,7 @@ Also See:
 
  - [User Manual](https://projectwilberforce.github.io/colorbleed)
  - [Asset Store Link](https://www.assetstore.unity3d.com/#!/content/85066)
- - [Forum Thread]()
+ - [Forum Thread](https://forum.unity3d.com/threads/colorbleed-image-effect.473033/)
  - [Our Other Projects](https://www.assetstore.unity3d.com/en/#!/search/page=1/sortby=popularity/query=publisher:22764)
 
 ![](demo_screenshot.jpg)
