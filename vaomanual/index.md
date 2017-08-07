@@ -77,54 +77,75 @@ See [forum for discussion](http://forum.unity3d.com/threads/volumetric-ambient-o
 
 VAO effect behaviour is controlled by a couple of easy to use parameters.
 
-**Radius**
-
+**Radius**  
 Radius sets the distance of how far the algorithm reaches to calculate occlusion. Higher radius means longer shadows caused by objects further away.
 
-**Power**
-
+**Power**  
 Power variable controls the hardness of the shadow, lower value causes softer shadows.
 
-**Presence**
-
+**Presence**  
 Presence makes the effect more pronounced towards the crease. 
 
 Presence turned off is closer to "physically-based" solution, however, adjust this to suit your scene and desired appearance.
 
 You can also try increasing presence rather than radius to make effect more visible and save performance.
 
-**Quality**
-
+**Quality**  
 Number of samples used to calculate VAO. Choose lower settings if you need faster performance.
 
-**Adaptive Sampling**
+### Performance Settings
 
+**Adaptive Sampling**  
 Adaptive sampling means lower number of samples is used on more distant areas of the image. Ideally causes no loss of detail.
 
 - *Enabled Automatic*: Automatically determines where lower sample count should be used. 
 - *Enabled Manual*: Provides additional slider to fine-tune the change between the quality levels.
 
-**Downsampled Pre-pass**
-
+**Downsampled Pre-pass**  
 Speeds up the calculation by downsampling the parts without occlusion. Results in performance boost, especially for higher resolutions.
 
 - *Greedy*: Skips areas that are unoccluded in the downsampled prepass. Fast, but may cause small loss of detail. 
 - *Careful*: Instead of skipping computes occlusion with low quality setting. Smaller performance speed-up but no loss of detail. 
 
-**Command Buffer**
+### Near/Far Occlusion Limits
+*New in v1.7*
 
+These settings control how VAO effect looks depending on surface's distance from the camera.
+
+**Max Radius**  
+Maximum radius given as a percentage of area considered for occlusion to the whole screen (e.g *0.33* means the sampled area will never exceed third of the screen). Use this to avoid performance drops when object passes the view close to the camera.
+
+**Distance Falloff**  
+This gradually decreases occlusion effect behind certain distance. For example you want to make objects close to camera even more pronounced or don't want occlusion on your background objects.
+
+- *Off*: VAO does not change based on distance.
+- *Absolute*: Point of the start of the falloff is given as an absolute value - similar to camera's far clipping plane.
+- *Relative*: Falloff start is relative to the screen size of the occlusion area. This respects the shape of the surfaces and the falloff has more natural feel (compared to the absolute plane cutoff)
+Both approaches have second parameter that controls the speed of the falloff.
+
+### Rendering Pipeline
+
+**Command Buffer**  
 Insert effect via command buffer (BeforeImageEffectsOpaque event)
 
-**GBuffer Depth&Normal**
-
+**GBuffer Depth&Normal**  
 Take depth&normals from GBuffer of deferred rendering path, use this for better precision. Note that this feature will cause some performance drop.
 
-**Downsampling**
+**Intermediate Texture Format**  
+*New in v1.7*
 
+This lets you specify texture format for mixing VAO command buffer with scene. *Auto* is recommended (handles switching between HDR by default). 
+
+**Far Plane Source**  
+*New in v1.7*
+
+Source of Far Clipping Plane values. Some effects (notably Postprocessing Stack's Temporal Anti-aliasing) alter the *[_ProjectionParams](https://docs.unity3d.com/Manual/SL-UnityShaderVariables.html)* variable which may cause flickering. If you are planning on using TAA or similar effect enable the *Camera* option to fix this.
+
+**Downsampling**  
 Reduces resolution of output, use this to gain performance at the cost of quality. Try lowering quality parameter first as this reduces quality dramatically. Having high quality setting with downsampling enabled serves no purpose.
 Alternatively, use this option if you have some sort of supersampling enabled - as high pixel density would have adverse effect on performance without much visual impact.
 
-**Luminance Sensitivity**
+### Luminance Sensitivity
 
 Reduces occlusion on bright surfaces - either light sources or strongly lit areas. We recommend enabling this in combination with downsampling to reduce the most visible artifact caused by reducing of the occlusion texture. Also use this to prevent occlusion on lamps, windows, screens etc.
 
@@ -134,18 +155,18 @@ Reduces occlusion on bright surfaces - either light sources or strongly lit area
 - *Falloff Width*: Width of the area in which is the occlusion gradually reduced.
 - *Falloff Softness*: How fast is the occlusion reduced.
 
-<div>Try moving the sliders to see the difference:</div>
+<!--<div>Try moving the sliders to see the difference:</div>
 <iframe frameborder="0" class="juxtapose" width="100%" height="380" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=ff4980d6-9947-11e6-9008-0edaf8f81e27"></iframe>
-<iframe frameborder="0" class="juxtapose" width="100%" height="380" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=137d9cf4-9948-11e6-9008-0edaf8f81e27"></iframe>
+<iframe frameborder="0" class="juxtapose" width="100%" height="380" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=137d9cf4-9948-11e6-9008-0edaf8f81e27"></iframe>-->
 
-<!--
-<figcaption>Without VAO enabled</figcaption>
+
+<!--<figcaption>Without VAO enabled</figcaption>
 ![](no_vao.jpg)
 <figcaption>VAO with luminance sensitivity</figcaption>
 ![](vao_luma.jpg)
 <figcaption>VAO without luminance sensitivity</figcaption>
-![](vao.jpg)
--->
+![](vao.jpg)-->
+
 
 
 **Effect Mode**
@@ -154,26 +175,41 @@ Reduces occlusion on bright surfaces - either light sources or strongly lit area
 - *Color Tint*: Custom-set occlusion color. 
 - *Color Bleed*: Additionaly to ambient occlusion, nearby surfaces "bleed" color to each other.
 
-**Color Bleed**
+### Color Bleed
 
 Color Bleed has its own set of parameters.
 
-- *Power*: Similar to the AO Power setting - controls the intensity of the color bleed part.
-- *Quality*: sets the size of the sample set used for the color bleed (relative to AO samples). Options are 'Normal', 'Half' and 'Quarter'.
-- *Skip Backfaces*: Makes surfaces cast color only in front of them - unlike shadows, that are cast both to the front and to the back. See attached screenshots.
+**Power**  
+Similar to the AO Power setting - controls the intensity of the color bleed part.
 
-<iframe frameborder="0" class="juxtapose" width="100%" height="380" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=28461d04-d41d-11e6-892e-0edaf8f81e27"></iframe>
+**Presence**  
+Presence makes the colorbleed more pronounced towards the crease. 
 
-**Blur Mode**
+**Same Color Hue Attenuation**  
+*New in v1.7*
+
+Provides a set of options to control color contribution based on color of source and target surfaces.
+
+**Quality**  
+Sets the size of the sample set used for the color bleed (relative to AO samples). Options are 'Normal', 'Half' and 'Quarter'.
+
+**Dampen Self-Bleeding** 
+Limits casting color on itself. 
+
+**Skip Backfaces**  
+Makes surfaces cast color only in front of them - unlike shadows, that are cast both to the front and to the back. 
+<!--See attached screenshots.-->
+
+<!--<iframe frameborder="0" class="juxtapose" width="100%" height="380" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=28461d04-d41d-11e6-892e-0edaf8f81e27"></iframe>-->
+
+### Blur Mode
 
 In case you are applying your own blur after VAO effect, you can try turning this off to save performance. Blur implementations included in VAO are fast and a part of its visual appearance, so you might consider keeping it on all the time.
 
-**Basic**
-
+**Basic**  
 Simple uniform 3x3 blur
 
-**Enhanced**
-
+**Enhanced**  
 If you need extra control over how is the occlusion blurred - with controls size and sharpness. Sizes of 3 or 5 can be faster than basic blur, but higher values will be slower. Sharpness does not affect performance.
 
 **Output AO only**
