@@ -116,7 +116,7 @@ These settings control how VAO effect looks depending on surface's distance from
 Maximum radius given as a percentage of area considered for occlusion to the whole screen (e.g *0.33* means the sampled area will never exceed third of the screen). Use this to avoid performance drops when object passes the view close to the camera.
 
 **Distance Falloff**  
-This gradually decreases occlusion effect behind certain distance. For example you want to make objects close to camera even more pronounced or don't want occlusion on your background objects.
+This gradually decreases occlusion effect after a certain distance. For example you want to make objects close to camera even more pronounced or don't want occlusion on your background objects.
 
 - *Off*: VAO does not change based on distance.
 - *Absolute*: Point of the start of the falloff is given as an absolute value - similar to camera's far clipping plane.
@@ -193,7 +193,7 @@ Provides a set of options to control color contribution based on color of source
 **Quality**  
 Sets the size of the sample set used for the color bleed (relative to AO samples). Options are 'Normal', 'Half' and 'Quarter'.
 
-**Dampen Self-Bleeding** 
+**Dampen Self-Bleeding**  
 Limits casting color on itself. 
 
 **Skip Backfaces**  
@@ -202,7 +202,7 @@ Makes surfaces cast color only in front of them - unlike shadows, that are cast 
 
 <!--<iframe frameborder="0" class="juxtapose" width="100%" height="380" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=28461d04-d41d-11e6-892e-0edaf8f81e27"></iframe>-->
 
-### Blur Mode
+### Blur
 
 In case you are applying your own blur after VAO effect, you can try turning this off to save performance. Blur implementations included in VAO are fast and a part of its visual appearance, so you might consider keeping it on all the time.
 
@@ -212,8 +212,7 @@ Simple uniform 3x3 blur
 **Enhanced**  
 If you need extra control over how is the occlusion blurred - with controls size and sharpness. Sizes of 3 or 5 can be faster than basic blur, but higher values will be slower. Sharpness does not affect performance.
 
-**Output AO only**
-
+**Output AO only**  
 Use for development to display only ambient occlusion component.
 
 |                 | **low radius**  | **high radius**
