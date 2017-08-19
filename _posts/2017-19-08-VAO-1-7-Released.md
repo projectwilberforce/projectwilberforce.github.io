@@ -26,7 +26,7 @@ We have also fixed some issues from previous versions:
 - **Intermediate Texture Format** - used by command buffer implementation to decide what texture format to use to mix VAO with the scene. Auto setting is recommended but you can choose any format if you run into issues, especially with HDR rendering.
 - Fixed **flipping image upside down** in new Unity versions - this happens every other Unity release and we keep fixing it constantly
 
-To try it, just [download free demo] with watermark, or get full version at [Unity Asset Store](http://u3d.as/xzs)
+To try it, just [download free demo](https://projectwilberforce.github.io/vaodemo/) with watermark, or get full version at [Unity Asset Store](http://u3d.as/xzs)
 
 ![]({{site.baseurl}}/images/vao17/vao-1-7-fix.jpg)
 
