@@ -11,6 +11,8 @@ permalink: /blog/:title
 
 # {{page.title}}
 
+![]({{site.baseurl}}/images/vao17/vao_1_7.jpg)
+
 In this release we focused on improving visual quality and adding new controls. Based on the feedback from our users we have added:
 
 - **Controls to limit AO radius** near camera to certain size wrt. the screen. This is to prevent performance loss when radius grows very large after perspective projection to the screen for nearby objects.
@@ -22,9 +24,9 @@ We have also fixed some issues from previous versions:
 - **Far plane source control** - this will take information about far plane setting either from "ProjectionParams" variable provided by Unity or directly from camera object. As we had flickering issues with Temporal Antialiasing in Unity's Post Processing Stuck we had to change our implementation to support also second setting - from camera.
 - We've **improved precision** of our algorithm so it now creates detailed occlusion also far away from camera in great distances  
 - **Intermediate Texture Format** - used by command buffer implementation to decide what texture format to use to mix VAO with the scene. Auto setting is recommended but you can choose any format if you run into issues, especially with HDR rendering.
-- Fixed **flipping image upside down** in new Unity versions - this happens every other Unity release and we keep constantly fixing it
+- Fixed **flipping image upside down** in new Unity versions - this happens every other Unity release and we keep fixing it constantly
 
-To try it, just <a href="https://projectwilberforce.github.io/vaodemo/" class="downloadbtn">download free demo</a> with watermark, or get full version at [Unity Asset Store](http://u3d.as/xzs)
+To try it, just [download free demo] with watermark, or get full version at [Unity Asset Store](http://u3d.as/xzs)
 
 ![]({{site.baseurl}}/images/vao17/vao-1-7-fix.jpg)
 
