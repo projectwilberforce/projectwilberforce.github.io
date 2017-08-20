@@ -1,5 +1,5 @@
 ---
-title:  "We're releaseing Volumetric Ambient Occlusion Unity Plugin v1.7"
+title:  "We're releasing Volumetric Ambient Occlusion Unity Plugin v1.7"
 date:   2017-08-19 17:36:42
 categories: unity plugin
 excerpt: "Improved occlusion in great distances (suitable for exterior scenes), controls to limit radius near camera, fade occlusion in the distance and bugfixes in Unity integration"
