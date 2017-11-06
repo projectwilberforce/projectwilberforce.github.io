@@ -65,31 +65,67 @@ WW material behaviour is controlled by following parameters:
 **Wire Thickness**
 How thick the line appears.
 
-**Wire Color**
-Color of the line (can be transparent)
+## Wire Settings
 
-**Fill Color**
-Color of the rest of the face (can be transparent)
+**Thickness**
+How thick the line appears.
 
-**Remove Diagonals**
-Skips longest triangle edges to create a quad wireframe
+**Color**
+Color of the line (can be transparent).
 
-**Apply Flat Shading**
-Faces are shaded based on their orientation to camera.
+**Flat Shading**
+Wires are shaded based on their orientation to camera (cosine of surface normal and view vector).
 
 **Calculate in Object Space (Perspective)**
 Perspective display - line appears thinner as distance from camera increases.
 
-**Show Line Caps (beta)**
-Switch on to display line caps (making the line thicker in the corners)
+## Fill Color Settings
+
+**Color**
+Color of the rest of the face (can be transparent).
+
+**Flat Shading**
+Rest of the face is shaded based on their orientation to camera (cosine of surface normal and view vector).
+
+## Wire/Fill Color Transition Settings
+
+Controls for appearance of transition between wire and fill color (anti-aliasing).
+
+**Thickness Units**
+Units in which is thickness of the transition between wire and fill color specified.
+
+`Pixels`:  option is default and recommended; `Relative to Wire Thickness`: option will scale together with change in wire thickness
+
+**Thickness**
+Thickness/width of the transition.
+
+## Diagonal Removal
+
+Removes wire on longest edge of each triangle
+
+**Enable**
+Enables diagonal removal.
+
+**Ignore Model Transformations**
+This will not take transformations (position, rotation, scale) of model into account when removing diagonals. Recommended for dynamic meshes.
+
+## Line Caps (Beta)
+
+**Enable**
+Switch on to display line caps (making the line thicker in the corners).
 
 **Line Caps Size**
 How thick the line caps are.
 
-**Apply to faces**
-On what surfaces of the mesh will be effect applied.
+## Rendering Settings
 
-`Front`: default option; `Back`: use to make a backface material for "see-through" double-sided mesh.
+**Depth Biass**
+Offsets depth of wire by given amount - use this to combat Z-fighting or for interesting effect.
+
+**Apply to faces**
+On what sides of surfaces will be effect applied.
+
+`Front`: default option; `Back`: use to make a backface material for "see-through" double-sided mesh. `Both`: both face sides visible
 
 # How to
 ## Basic usage
