@@ -15,7 +15,7 @@ title: Wilberforce Colorbleed Unity plugin User Guide
 
 # Introduction
 
-Wilberforce Colorbleed (WC) is our Screen Space Indirect Lighting Plugin for Unity 5 (5.3.0 or higher)
+Wilberforce Colorbleed (WC) is our Screen Space Indirect Lighting Plugin for Unity 5 (5.3.6 or higher)
 
 You can [download free demo](https://projectwilberforce.github.io/cbdemo) or buy Wilberforce Colorbleed at [Unity Asset Store](https://www.assetstore.unity3d.com/#!/content/85066).
 
@@ -49,11 +49,11 @@ See [forum for discussion](https://forum.unity3d.com/threads/colorbleed-image-ef
  
 # Requirements
 
-- Unity 5 (5.3.0 or higher; all editions including Personal)
+- Unity 5 (5.3.6 or higher; all editions including Personal)
 - Shader Model 3.0:  
 *NVIDIA cards since 2004 (GeForce 6)*  
 *AMD cards since 2005 (Radeon X1300)*  
-*Intel cards since 2006 (GMA X3000)* 
+*Intel cards since 2006 (GMA X3000)*
 - Works on desktop platforms: DirectX 9.0c and higher, OpenGL
 - Windows, Mac, Linux
 - Not tested on mobile and web platforms
@@ -122,22 +122,39 @@ Number of samples used to calculate WC. Select lower settings if you need faster
 
 Adaptive sampling means lower number of samples is used on more distant areas of the image. Ideally causes no loss of detail.
 
-- *Enabled Automatic*: Automatically determines where lower sample count should be used. 
+- *Enabled Automatic*: Automatically determines where lower sample count should be used.
 - *Enabled Manual*: Provides additional slider to fine-tune the change between the quality levels.
 
 **Downsampled Pre-pass**
 
 Speeds up the calculation by downsampling the parts with less colorbleed. Results in performance boost, especially for higher resolutions.
 
-- *Greedy*: Skips areas that are below certain threshold of color in the downsampled prepass. Fast, but may cause small loss of detail. 
-- *Careful*: Instead of skipping computes colorbleed with low quality setting. Smaller performance gain but no loss of detail. 
+- *Greedy*: Skips areas that are below certain threshold of color in the downsampled prepass. Fast, but may cause small loss of detail.
+- *Careful*: Instead of skipping computes colorbleed with low quality setting. Smaller performance gain but no loss of detail.
 
 **Downsampling**
 
 Reduces resolution of output, use this to gain performance at the cost of quality. Try lowering quality parameter first as this reduces quality dramatically. Having high quality setting with downsampling enabled serves no purpose.
 Alternatively, use this option if you have some sort of supersampling enabled - as high pixel density would have adverse effect on performance without much visual impact.
 
-**Luminance Sensitivity**
+
+### Rendering Pipeline
+
+**Command Buffer**  
+Insert effect via command buffer (BeforeImageEffectsOpaque event)
+
+**GBuffer Depth&Normal**  
+Take depth&normals from GBuffer of deferred rendering path, use this for better precision. Note that this feature will cause some performance drop.
+
+**Intermediate Texture Format**  
+
+This lets you specify texture format for mixing colorbleed command buffer with scene. *Auto* is recommended (handles switching between HDR by default).
+
+**Far Plane Source**  
+
+Source of Far Clipping Plane values. Some effects (notably Postprocessing Stack's Temporal Anti-aliasing) alter the *[_ProjectionParams](https://docs.unity3d.com/Manual/SL-UnityShaderVariables.html)* variable which may cause flickering. If you are planning on using TAA or similar effect enable the *Camera* option to fix this.
+
+### Luminance Sensitivity
 
 Reduces colorbleed effect on bright surfaces - either light sources or strongly lit areas. We recommend enabling this in combination with downsampling to reduce the most visible artifact caused by reducing of the colorbleed texture. Also use this to prevent colorbleed on lamps, windows, screens etc.
 
