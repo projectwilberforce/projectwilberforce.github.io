@@ -1,9 +1,9 @@
----
+d ---
 layout: vaodemo
 title: Colorbleed Unity plugin Demo
 ---
 
-# Colorbleed 1.0 Demo
+# Colorbleed 1.1 Demo
 
 We provide a free evaluation version of our Colorbleed Unity plugin (with watermark).
 
@@ -11,7 +11,7 @@ It contains all the features of a full version, except it does not run on Unity 
 
 If you like Colorbleed and want to use it please buy it at [Unity Asset Store](https://www.assetstore.unity3d.com/#!/content/85066) to support its development. Also let us know what you think, your feedback is welcome.
 
-<a href="https://projectwilberforce.github.io/cbdemo/Wilberforce_Colorbleed_1_0_Demo.zip" class="downloadbtn">Download Demo</a>
+<a href="https://projectwilberforce.github.io/cbdemo/Wilberforce_Colorbleed_1_1_Demo.zip" class="downloadbtn">Download Demo</a>
 
 
 Also See:
