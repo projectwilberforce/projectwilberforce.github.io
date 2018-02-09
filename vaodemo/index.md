@@ -5,6 +5,8 @@ title: VAO Unity plugin Demo
 
 # Volumetric Ambient Occlusion 1.8 Demo
 
+## Demo for newest version 1.9 with better performance, rendering pipeline integration and less artifacts will be available shortly!
+
 **[2017/07/11] UPDATED** *to version 1.8 (Fixed jaggy edges in single pass stereo, improved compatibility with Unity 2017)*
 
 **[2017/18/8] UPDATED** *to version 1.7 (Improved visual quality, radius limits controls + Unity integration bugfixes)*
