@@ -10,7 +10,7 @@ title: Camera Lens Plugin User Guide
 - [Effects How-to](#effects-how-to)
     - [Distortion](#distortion)
     - [Chromatic Aberrations](#chromatic-aberrations)
-    - [Depth of Field (Bokeh)](#depth-of-field-(Bokeh))
+    - [Depth of Field (Bokeh)](#depth-of-field-bokeh)
     - [Bloom](#bloom)
     - [Vignette](#vignette)
 - [Controls walk-through](#controls-walk-through)
@@ -34,7 +34,7 @@ Our depth of field implementation provides interesting additional feature - poly
 
 Package comes with full source code for both C# script and the shader.
 
-Online documentation can be found [here](https://projectwilberforce.github.io/cameralens/manual/). Please rate our plugin on the asset store and contact us with issues or feature suggestions. See forum for discussion and contact us at <projectwilberforce@gmail.com> for additional support.
+Please rate our plugin on the asset store and contact us with issues or feature suggestions. See forum for discussion and contact us at <projectwilberforce@gmail.com> for additional support.
 
 ## Requirements
 
@@ -79,7 +79,7 @@ Start by setting desired **Size** and **Linearity** - how fast aberrations enlar
 
 ## Depth of Field (Bokeh)
 
-<img style="" src="bokeh.png">
+<img style="float: right;" src="bokeh.png">
 
 Depth of field effect simulates defocused (blurred) areas in the foreground and background around the focal plane. Our implementation can also simulate various shapes of aperture opening.
 
