@@ -45,7 +45,7 @@ Please rate our plugin on the asset store and contact us with issues or feature 
 *NVIDIA cards since 2004 (GeForce 6)*  
 *AMD cards since 2005 (Radeon X1300)*  
 *Intel cards since 2006 (GMA X3000)*
-- Works on desktop platforms: DirectX 9.0c and higher, OpenGL
+- Works on desktop platforms: DirectX 11 and higher, OpenGL
 - Windows, Mac, Linux
 - Not tested on mobile and web platforms
 
