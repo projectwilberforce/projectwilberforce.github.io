@@ -18,6 +18,8 @@ title: Camera Lens Plugin User Guide
 
 # About Camera Lens Effects
 
+![]({{site.baseurl}}/images/cameralens/camera_lens_1_0.jpg)
+
 Camera Lens Effects package is a collection of image effects for simulating some properties of real camera lens such as depth of field, vignetting and distortion for Unity 5 (5.6 or higher). Package contains following effects:
 
  - Depth of field effect with polygonal aperture (Bokeh)
