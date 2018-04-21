@@ -3,6 +3,8 @@ layout: cameralensmanual
 title: Camera Lens Plugin User Guide
 ---
 
+# Camera Lens Effects Plugin is coming soon!
+
 # Contents
 - [About Camera Lens Effects](#about-camera-lens-effects)
 - [Requirements](#requirements)
