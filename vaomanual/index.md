@@ -20,7 +20,7 @@ title: VAO Unity plugin User Guide
 
 Volumetric Ambient Occlusion (VAO) is our Screen Space Ambient Occlusion for Unity 5 (5.3.0 or higher)
 
-You can [download free demo](https://projectwilberforce.github.io/vaodemo) or buy VAO at [Unity Asset Store](http://u3d.as/xzs).
+You can buy VAO at [Unity Asset Store](http://u3d.as/xzs).
 
 Please rate our plugin [on Asset Store](https://www.assetstore.unity3d.com/en/#!/account/downloads/search=Volumetric%20Ambient%20Occlusion) to support its development.
 
