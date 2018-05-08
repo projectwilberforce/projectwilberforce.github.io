@@ -3,8 +3,6 @@ layout: cameralensmanual
 title: Camera Lens Plugin User Guide
 ---
 
-# Camera Lens Effects Plugin is coming soon!
-
 # Contents
 - [About Camera Lens Effects](#about-camera-lens-effects)
 - [Requirements](#requirements)
@@ -30,6 +28,8 @@ Camera Lens Effects package is a collection of image effects for simulating some
  - Chromatic aberrations
  - Lens distortion
 
+ You can buy this package at [Unity Asset Store](http://u3d.as/Sgg).
+ 
 These effects can be used to make your scenes look closer to as if they were captured with real camera and lens - making computer generated graphics look more natural or to achieve the "cinematic look" for cut scenes or in-game. Being very tweakable, the effects can be combined, reordered, customized and overdone to create interesting looks or visual effects.
 
 All the effects are optimized and designed to work well together to get best performance and visual quality. Effects are attached to camera and are applied as a post-processing step - this way, performance is dependent on screen resolution only and not on the scene complexity.
