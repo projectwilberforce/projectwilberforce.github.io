@@ -13,7 +13,7 @@ title: Camera Lens Plugin User Guide
     - [Depth of Field (Bokeh)](#depth-of-field-bokeh)
     - [Bloom](#bloom)
     - [Vignette](#vignette)
-	- [Color Grading & Tone Mapping](#color-grading-_tone-mapping)
+	- [Color Grading & Tone Mapping](#color-grading--tone-mapping)
 - [Controls walk-through](#controls-walk-through)
 - [Contact Information](#contact-information)
 
