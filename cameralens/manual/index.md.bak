@@ -13,7 +13,7 @@ title: Camera Lens Plugin User Guide
     - [Depth of Field (Bokeh)](#depth-of-field-bokeh)
     - [Bloom](#bloom)
     - [Vignette](#vignette)
-	- [Color Grading & Tone Mapping](#color-grading-_tone-mapping)
+	- [Color Grading & Tone Mapping](#color_grading_tonemapping)
 - [Controls walk-through](#controls-walk-through)
 - [Contact Information](#contact-information)
 
@@ -278,6 +278,7 @@ Higher value puts more emphasis on more recent frames, causing less 'motion blur
 
 **Antiflicker - Fade**
 
+
 ## Vignette
 
 **Min/Max Intensity**
@@ -300,50 +301,6 @@ Takes aspect ratio of the screen into account.
 
 **Show Debug Output**
 Displays vignetting only.
-
-## Color Grading & Tone mapping
-
-**HDR Tonemapper**
-Turns ACES tone mapping on or off.
-
-**Intensity**
-Tonemapping curve slope - lower value means linear mapping, higher value is ACES standard curve.
-
-**Exposure**
-Exposure compensation before tone mapping.
-
-**Gamma**
-Gamma adjustment after tone mapping.
-
-**Contrast**
-Contrast adjustment after tone mapping.
-
-**Saturation**
-Saturation adjustment after tone mapping.
-
-**Temperature**
-Color temperature adjustment before tone mapping (blue - yellow range).
-
-**Tint**
-Color tint adjustment before tone mapping (purple - green range).
-
-**Color Grading Mode**
-Color correction method to use (either custom LUT texture or manual setting using RGB curves).
-
-**Intensity**
-Blends between color corrected and original image.
-
-**LUT Texture**
-LUT Texture to use for color correction.
-
-**Red**
-Red channel adjustment curve.
-
-**Green**
-Green channel adjustment curve.
-
-**Blue**
-Blue channel adjustment curve.
 
 ## Usage tips
 
