@@ -63,9 +63,9 @@ Please rate our plugin on the asset store and contact us with issues or feature 
 
 1. Attach Camera Lens effect to camera using either **Add Component -> Image Effects -> Rendering -> Camera Lens** or by **dragging & dropping CameraLens.cs file to camera**.
 2. Select camera in **Hierarchy** window and use controls in **Inspector** to control the effect.
-2. We recommend enabling **Allow HDR** option on the Unity camera to get most out of bloom and depth of field effects.
-3. Turn on effects you want to use and tweak their respective controls to get desired looks. See manual for description of all accessible controls of individual effects.
-4. Use **Effects Order Settings** foldout to change order of individual effects if desired.
+3. We recommend enabling **Allow HDR** option on the Unity camera to get most out of bloom and depth of field effects.
+4. Turn on effects you want to use and tweak their respective controls to get desired looks. See manual for description of all accessible controls of individual effects.
+5. Use **Effects Order Settings** foldout to change order of individual effects if desired.
 
 # Effects How-to
 
