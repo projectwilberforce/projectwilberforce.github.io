@@ -1,4 +1,5 @@
 
+---
 layout: finalvignettemanual
 title: Final Vignette Plugin User Guide
 ---
