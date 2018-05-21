@@ -32,7 +32,9 @@ Camera Lens Effects package is a collection of image effects for simulating some
  - Tone Mapping (ACES)
  - Color LUTs Support
 
- You can buy this package at [Unity Asset Store](http://u3d.as/Sgg).
+You can buy this package at [Unity Asset Store](http://u3d.as/Sgg).
+
+There is a watermarked [demo available at our pages](https://projectwilberforce.github.io/cameralens/demo).
  
 These effects can be used to make your scenes look closer to as if they were captured with real camera and lens - making computer generated graphics look more natural or to achieve the "cinematic look" for cut scenes or in-game. Being very tweakable, the effects can be combined, reordered, customized and overdone to create interesting looks or visual effects.
 

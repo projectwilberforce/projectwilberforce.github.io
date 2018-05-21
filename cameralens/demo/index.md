@@ -12,8 +12,7 @@ It contains all the features of a full version, except it does not run on Unity 
 If you like Final Lens Effects and want to use it please buy it at [Unity Asset Store](http://u3d.as/Sgg) to support its development. Also let us know what you think, your feedback is welcome.
 
 <a href="https://projectwilberforce.github.io/cameralens/demo/CameraLensEffects_1_2_Demo.unitypackage" class="downloadbtn">Download Demo</a>
-
-
+   
 Also See:
 
  - [User Manual](https://projectwilberforce.github.io/cameralens/manual)
