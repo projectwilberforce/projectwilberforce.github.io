@@ -27,7 +27,7 @@ Also See:
 1. From Unity menu select *Assets -> Import Package -> Custom Package...*
 2. Locate and select file *CameraLensEffects_1_2_Demo.unitypackage*  
 3. Click *Import*   
-5. Attach *Camera Lens" effect to *Camera* and you can change settings in the *Inspector*.
+5. Attach *Camera Lens* effect to *Camera* and you can change settings in the *Inspector*.
 6. For more details on the settings check the plugin [user guide](/cameralens/manual)
 
 # Contact Information
