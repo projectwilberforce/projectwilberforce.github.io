@@ -63,7 +63,7 @@ VAO improves realism and depth perception of the scene by simulating soft ambien
 
 Combining classic screen-space ambient occlusion (SSAO) algorithm with a more physically based approach lets us achieve better visual quality and performance compared to classic SSAO. Volumetric approach calculates volume of occluding geometry around given point, providing more accurate shadows than traditional SSAO technique.
 
-Online documentation can be found [here](https://projectwilberforce.github.io/vaomanual/). Please rate our plugin on the asset store and contact us with issues or feature suggestions.
+Please rate our plugin on the asset store and contact us with issues or feature suggestions.
 
 <div style="text-align:center;">
 <img src="corridor.png" />
