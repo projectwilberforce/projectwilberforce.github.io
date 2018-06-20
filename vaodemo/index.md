@@ -49,7 +49,7 @@ Also See:
 1. From Unity menu select *Assets -> Import Package -> Custom Package...*
 2. Locate and select file *VolumetricAmbientOcclusion_0_10_Demo_Small.unitypackage*  
 3. Click *Import*   
-5. Attach *Camera Lens* effect to *Camera* and you can change settings in the *Inspector*.
+5. Attach *Volumetric Ambient Occlusion* effect to *Camera* and you can change settings in the *Inspector*.
 6. For more details on the settings check the plugin [user guide](/vaomanual)
 
 # Contact Information
