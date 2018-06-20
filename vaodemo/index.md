@@ -41,7 +41,7 @@ Also See:
  - [Forum Thread](http://forum.unity3d.com/threads/volumetric-ambient-occlusion-image-effect.428426/)
  - [Our Other Projects](https://www.assetstore.unity3d.com/en/#!/search/page=1/sortby=popularity/query=publisher:22764)
 
-![](vao_1_7.jpg)
+![](vao_1_9.jpg)
 
 
 # Installation
@@ -50,7 +50,7 @@ Also See:
 2. Locate and select file *VolumetricAmbientOcclusion_0_10_Demo_Small.unitypackage*  
 3. Click *Import*   
 5. Attach *Camera Lens* effect to *Camera* and you can change settings in the *Inspector*.
-6. For more details on the settings check the plugin [user guide](/cameralens/manual)
+6. For more details on the settings check the plugin [user guide](/vaomanual)
 
 # Contact Information
 In case of questions or further issues, please contact us at <projectwilberforce@gmail.com>
