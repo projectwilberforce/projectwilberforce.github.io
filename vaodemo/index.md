@@ -28,8 +28,6 @@ If you like VAO and want to use it please buy it at [Unity Asset Store](http://u
 
 <a href="https://projectwilberforce.github.io/vaodemo/VolumetricAmbientOcclusion_1_10_Demo_Small.unitypackage" class="downloadbtn">Download Demo</a>
 
-** NOTE: In the demo, the new raycast algorithm does not work correctly on some platforms. Please note that in full version it works without problems. This is due to some limitations given by the fact that demo is a pre-compiled .dll library. We are working on the fix to solve this issue. 
-
 <!--
 <a href="https://projectwilberforce.github.io/vaodemo/VolumetricAmbientOcclusion_1_8_Demo_Small.zip">Download Demo without sample scene (smaller and faster import)</a>
 -->
