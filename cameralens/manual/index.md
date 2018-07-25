@@ -17,7 +17,7 @@ title: Final Camera Effects Pro Plugin User Guide
 - [Controls walk-through](#controls-walk-through)
 - [Contact Information](#contact-information)
 
-# About Camera Lens Effects
+# About Final Camera Effects Pro
 
 ![]({{site.baseurl}}/images/cameralens/camera_lens_1_2.jpg)
 

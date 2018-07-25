@@ -3,13 +3,13 @@ layout: vaodemo
 title: Final Lens Effects Unity Plugin Demo
 ---
 
-# Final Lens Effects 1.2 Demo
+#  Final Camera Effects Pro 1.2 Demo
 
-We provide a free evaluation version of our Final Lens Unity plugin (with watermark).
+We provide a free evaluation version of our  Final Camera Effects Pro Unity plugin (with watermark).
 
 It contains all the features of a full version, except it does not run on Unity 5.6 (only Unity 2017.1 and higher). 
 
-If you like Final Lens Effects and want to use it please buy it at [Unity Asset Store](http://u3d.as/Sgg) to support its development. Also let us know what you think, your feedback is welcome.
+If you like  Final Camera Effects Pro and want to use it please buy it at [Unity Asset Store](http://u3d.as/Sgg) to support its development. Also let us know what you think, your feedback is welcome.
 
 <a href="https://projectwilberforce.github.io/cameralens/demo/CameraLensEffects_1_2_Demo.unitypackage" class="downloadbtn">Download Demo</a>
    
