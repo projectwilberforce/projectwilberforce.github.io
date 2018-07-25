@@ -11,7 +11,7 @@ It contains all the features of a full version, except it does not run on Unity 
 
 If you like  Final Camera Effects Pro and want to use it please buy it at [Unity Asset Store](http://u3d.as/Sgg) to support its development. Also let us know what you think, your feedback is welcome.
 
-<a href="https://projectwilberforce.github.io/cameralens/demo/CameraLensEffects_1_2_Demo.unitypackage" class="downloadbtn">Download Demo</a>
+<a href="https://projectwilberforce.github.io/cameralens/demo/FinalCameraEffectsPro_1_2_Demo.unitypackage" class="downloadbtn">Download Demo</a>
    
 Also See:
 
@@ -25,9 +25,9 @@ Also See:
 # Installation
 
 1. From Unity menu select *Assets -> Import Package -> Custom Package...*
-2. Locate and select file *CameraLensEffects_1_2_Demo.unitypackage*  
+2. Locate and select file *FinalCameraEffectsPro_1_2_Demo.unitypackage*  
 3. Click *Import*   
-5. Attach *Camera Lens* effect to *Camera* and you can change settings in the *Inspector*.
+5. Attach *Final Camera Effects Pro* effect to *Camera* and you can change settings in the *Inspector*.
 6. For more details on the settings check the plugin [user guide](/cameralens/manual)
 
 # Contact Information
