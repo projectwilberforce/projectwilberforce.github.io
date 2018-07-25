@@ -20,7 +20,7 @@ Also See:
  - [Forum Thread](https://forum.unity.com/threads/final-lens-effects-image-effect.530606/)
  - [Our Other Projects](https://www.assetstore.unity3d.com/en/#!/search/page=1/sortby=popularity/query=publisher:22764)
 
-![](camera_lens_1_2_demo.png)
+![](camera_lens_1_2_demo.jpg)
 
 # Installation
 
