@@ -1,10 +1,10 @@
 ---
 layout: cameralensmanual
-title: Camera Lens Plugin User Guide
+title: Final Camera Effects Pro Plugin User Guide
 ---
 
 # Contents
-- [About Camera Lens Effects](#about-camera-lens-effects)
+- [About Final Camera Effects Pro](#about-final-camera-effects-pro)
 - [Requirements](#requirements)
 - [Quick Start Guide](#quick-start-guide)
 - [Effects How-to](#effects-how-to)
@@ -21,7 +21,7 @@ title: Camera Lens Plugin User Guide
 
 ![]({{site.baseurl}}/images/cameralens/camera_lens_1_2.jpg)
 
-Camera Lens Effects package is a collection of image effects for simulating some properties of real camera lens such as depth of field, vignetting and distortion for Unity 5 (5.6 or higher). Package contains following effects:
+Final Camera Effects Pro package is a collection of image effects for simulating some properties of real camera lens such as depth of field, vignetting and distortion for Unity 5 (5.6 or higher). Package contains following effects:
 
  - Depth of field effect with polygonal aperture (Bokeh)
  - Bloom effect
@@ -63,7 +63,7 @@ Please rate our plugin on the asset store and contact us with issues or feature 
 
 <img style="float: right;" src="cameralens_GUI.png">
 
-1. Attach Camera Lens effect to camera using either **Add Component -> Image Effects -> Rendering -> Camera Lens** or by **dragging & dropping CameraLens.cs file to camera**.
+1. Attach Final Camera Effects Pro effect to camera using either **Add Component -> Image Effects -> Rendering -> Final Camera Effects Pro** or by **dragging & dropping FinalCameraEffectsPro.cs file to camera**.
 2. Select camera in **Hierarchy** window and use controls in **Inspector** to control the effect.
 3. We recommend enabling **Allow HDR** option on the Unity camera to get most out of bloom and depth of field effects.
 4. Turn on effects you want to use and tweak their respective controls to get desired looks. See manual for description of all accessible controls of individual effects.
