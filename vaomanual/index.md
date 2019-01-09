@@ -179,6 +179,10 @@ Both approaches have second parameter that controls the speed of the falloff.
 
 ### Performance Settings
 
+**Temporal Filtering**
+
+Uses information from previous frames to calculate ambient occlusion - greatly improves performance and visual quality.
+
 **Adaptive Sampling**
 
 Adaptive sampling means lower number of samples is used on more distant areas of the image. Ideally causes no loss of detail.
